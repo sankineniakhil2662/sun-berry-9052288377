@@ -1,0 +1,16 @@
+@config "../../tailwind.config.cjs";
+@import "tailwindcss";
+@import "./tokens.css";
+
+/* Global font */
+html {
+  font-family: var(--font-sans);
+}
+
+body {
+  font-size: var(--text-base);
+  font-weight: var(--font-regular);
+  line-height: var(--leading-normal);
+  color: rgb(var(--color-body));
+  background-color: rgb(var(--color-bg));
+}
