@@ -32,7 +32,7 @@ const ease = "easeInOut";
 const isExternalHref = (href: string) => /^https?:\/\//i.test(href);
 
 const AboutHero: React.FC<AboutHeroProps> = ({
-  brandPill = "About TYLTech",
+  brandPill = "About Sunberry",
   titleTop,
   titleAccent,
   description,

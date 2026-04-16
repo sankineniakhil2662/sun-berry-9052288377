@@ -50,7 +50,7 @@ export default function CareerPostPage() {
 
             <div className="mt-6 flex flex-wrap gap-3">
               <a
-                href={`mailto:careers@tyltech.com?subject=Application%20for%20${encodeURIComponent(
+                href={`mailto:careers@Sunberry.com?subject=Application%20for%20${encodeURIComponent(
                   post.title
                 )}`}
                 className="rounded-button bg-brand px-6 py-3 text-sm font-semibold text-white shadow-card transition hover:bg-brandHover"

@@ -23,11 +23,14 @@ import InternshipProgramsPage from "./pages/Services/service-pages/InternshipPro
 import ElearningRoutes from "./pages/Services/service-pages/E-Learning/ElearningPage";
 import TechnologyGrid from "./pages/Services/service-pages/E-Learning/sections/TechnologyGrid";
 import TechnologyPage from "./pages/Services/service-pages/E-Learning/pages/TechnologyPage";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 
 const App = () => {
   return (
     <Router>
+      <ScrollToTop/>
+
       <Navbar />
 
       {/* IMPORTANT: push content below navbar */}

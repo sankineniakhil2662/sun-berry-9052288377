@@ -53,7 +53,7 @@ export default function Hero({ data }: { data: HeroData }) {
                   focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2
                   active:scale-95
                 "
-                aria-label="Learn more about TYL Tech on About page"
+                aria-label="Learn more about Sunberry on About page"
               >
                 {data.ctaLabel}
               </Link>

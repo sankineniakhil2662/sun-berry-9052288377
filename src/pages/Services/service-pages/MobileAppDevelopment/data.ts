@@ -34,7 +34,7 @@ export const mobileAppDevData = {
   hero: {
     eyebrow: "What We Do?",
     title: "Mobile App\nDevelopment Company in\nIndia",
-    subtitle: "At TYL Tech, we provide a full range of mobile app development services.",
+    subtitle: "At Sunberry, we provide a full range of mobile app development services.",
     description:
       "Our mobile app developers can build everything from bespoke Android and iOS apps to cross-platform applications. We focus on smooth performance, modern interfaces, and a great user experience.",
     ctaLabel: "Learn More",
@@ -183,8 +183,8 @@ export const mobileAppDevData = {
   },
 
   why: {
-    eyebrow: "WHY TYL TECH?",
-    title: "Why TYL Tech for Mobile\nApplication Development?",
+    eyebrow: "WHY Sunberry?",
+    title: "Why Sunberry for Mobile\nApplication Development?",
     description:
       "We help businesses build powerful and user-friendly mobile applications. Our engineers design dependable solutions that maximise product growth and align tightly with your business goals.",
     points: [

@@ -19,7 +19,6 @@ export const NAV_ITEMS: NavItem[] = [
       { label: "Mobile App Development", to: "/services/mobile-app-development" },
       { label: "UI/UX Design", to: "/services/ui-ux-design" },
       { label: "Digital Marketing", to: "/services/digital-marketing" },
-      // { label: "Photography & Videography", to: "/services/photography-videography" },
       { label: "Data Analytics", to: "/services/data-analytics" },
       { label: "Internship Programs", to: "/services/internship-programs" },
       { label: "E-Learning Solutions", to: "/services/e-learning-solutions" },
@@ -56,7 +55,7 @@ export const NAV_ITEMS: NavItem[] = [
       { label: "Taxi Booking", to: "/industries/taxi-booking" },
     ],
   },
-  { label: "Careers", to: "/Careers" },
+  { label: "Careers", to: "/careers" },
   { label: "Contact", to: "/contact" },
 ];
 
@@ -74,6 +73,7 @@ type NavLinksProps = {
 
 const NavLinks = ({ activePath, onHomeClick }: NavLinksProps) => {
   const [openLabel, setOpenLabel] = useState<string | null>(null);
+  const [hoveredLabel, setHoveredLabel] = useState<string | null>(null);
   const navRef = useRef<HTMLElement | null>(null);
 
   const accentText = "text-[rgb(var(--color-accent-magenta))]";
@@ -81,18 +81,29 @@ const NavLinks = ({ activePath, onHomeClick }: NavLinksProps) => {
   const hoverAccentText = "hover:text-[rgb(var(--color-accent-purple))]";
   const hoverAccentBorder = "hover:border-[rgb(var(--color-accent-purple))]";
 
-  const closeMenu = () => setOpenLabel(null);
+  const closeMenu = () => {
+    setOpenLabel(null);
+    setHoveredLabel(null);
+  };
 
-  // Close on outside click
+  const openMenu = (label: string) => {
+    setOpenLabel(label);
+  };
+
   useEffect(() => {
-    const onDown = (e: MouseEvent | globalThis.MouseEvent) => {
+    const onDown = (e: globalThis.MouseEvent) => {
       const target = e.target as Node | null;
       if (!target) return;
-      if (navRef.current && !navRef.current.contains(target)) closeMenu();
+
+      if (navRef.current && !navRef.current.contains(target)) {
+        closeMenu();
+      }
     };
 
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") closeMenu();
+      if (e.key === "Escape") {
+        closeMenu();
+      }
     };
 
     window.addEventListener("mousedown", onDown);
@@ -104,59 +115,83 @@ const NavLinks = ({ activePath, onHomeClick }: NavLinksProps) => {
     };
   }, []);
 
-  const linkClass = (path: string) =>
-    `border-b-2 pb-1 text-sm font-medium transition-colors ${
-      isPathActive(path, activePath)
-        ? `${accentText} ${accentBorder}`
-        : `text-white border-transparent ${hoverAccentText} ${hoverAccentBorder}`
-    }`;
+  const linkClass = (item: NavItem) => {
+    const routeActive = isPathActive(item.to, activePath);
+    const visualActive = hoveredLabel ? hoveredLabel === item.label : routeActive;
 
-  const dropdownTriggerClass = (isActive: boolean) =>
-    `flex items-center gap-1 text-sm font-medium transition-colors ${
-      isActive ? accentText : `text-white ${hoverAccentText}`
-    }`;
+    return [
+      "border-b-2 pb-1 text-sm font-medium transition-colors duration-200",
+      visualActive
+        ? `${accentText} ${accentBorder}`
+        : `border-transparent text-white ${hoverAccentText} ${hoverAccentBorder}`,
+    ].join(" ");
+  };
+
+  const dropdownTriggerClass = (item: NavItem, isOpen: boolean) => {
+    const routeActive = isPathActive(item.to, activePath);
+    const visualActive = hoveredLabel
+      ? hoveredLabel === item.label
+      : routeActive || isOpen;
+
+    return [
+      "flex items-center gap-1 border-b-2 pb-1 text-sm font-medium transition-colors duration-200",
+      visualActive
+        ? `${accentText} ${accentBorder}`
+        : `border-transparent text-white ${hoverAccentText} ${hoverAccentBorder}`,
+    ].join(" ");
+  };
 
   return (
     <nav ref={navRef} className="hidden md:flex items-center gap-8">
-      {NAV_ITEMS.map((item) => {
+      {NAV_ITEMS.map((item: NavItem) => {
         if (!item.children) {
-          const onClick = item.label === "Home" ? onHomeClick : undefined;
+          const handleClick = item.label === "Home" ? onHomeClick : undefined;
 
           return (
             <Link
               key={item.label}
               to={item.to}
-              onClick={(e) => {
+              onMouseEnter={() => setHoveredLabel(item.label)}
+              onMouseLeave={() => setHoveredLabel(null)}
+              onClick={(e: MouseEvent<HTMLAnchorElement>) => {
                 closeMenu();
-                onClick?.(e);
+                handleClick?.(e);
               }}
-              className={linkClass(item.to)}
+              className={linkClass(item)}
             >
               {item.label}
             </Link>
           );
         }
 
-        const isActive = isPathActive(item.to, activePath);
         const isMegaMenu = MEGA_MENU_LABELS.includes(item.label.toLowerCase());
         const isOpen = openLabel === item.label;
 
         return (
-          <div key={item.label} className="relative">
+          <div
+            key={item.label}
+            className="relative"
+            onMouseEnter={() => {
+              setHoveredLabel(item.label);
+              openMenu(item.label);
+            }}
+            onMouseLeave={() => {
+              setHoveredLabel(null);
+              setOpenLabel(null);
+            }}
+          >
             <button
               type="button"
-              className={dropdownTriggerClass(isActive)}
+              className={dropdownTriggerClass(item, isOpen)}
               aria-haspopup="true"
               aria-expanded={isOpen}
-              onClick={() => setOpenLabel((prev) => (prev === item.label ? null : item.label))}
             >
-              <span className="relative bottom-[2px]">{item.label}</span>
+              <span className="relative bottom-0.5">{item.label}</span>
 
               <svg
                 className={[
                   "h-2.5 w-2.5 transition-transform duration-200",
                   isOpen ? "rotate-180" : "rotate-0",
-                  hoverAccentText,
                 ].join(" ")}
                 fill="none"
                 stroke="currentColor"
@@ -168,11 +203,12 @@ const NavLinks = ({ activePath, onHomeClick }: NavLinksProps) => {
               </svg>
             </button>
 
-            {/* Dropdown (click controlled) */}
             <div
               className={[
-                "absolute left-1/2 top-full z-50 -translate-x-1/2 pt-3",
-                isOpen ? "opacity-100 visible pointer-events-auto" : "opacity-0 invisible pointer-events-none",
+                "absolute left-1/2 top-full z-50 -translate-x-1/2 pt-4",
+                isOpen
+                  ? "visible opacity-100 pointer-events-auto"
+                  : "invisible opacity-0 pointer-events-none",
                 "transition-opacity duration-200",
               ].join(" ")}
             >
@@ -185,24 +221,20 @@ const NavLinks = ({ activePath, onHomeClick }: NavLinksProps) => {
                 <div className="p-4">
                   <div className="flex items-center justify-between pb-3">
                     <div>
-                      <p className="text-xs font-semibold text-muted">{item.label.toUpperCase()}</p>
-                      <p className="text-sm font-semibold text-heading">{item.label} We Offer</p>
+                      <p className="text-xs font-semibold text-muted">
+                        {item.label.toUpperCase()}
+                      </p>
+                      <p className="text-sm font-semibold text-heading">
+                        {item.label} We Offer
+                      </p>
                     </div>
-
-                    <Link
-                      to={item.to}
-                      onClick={closeMenu}
-                      className={`text-xs font-semibold ${accentText} hover:underline`}
-                    >
-                      View all
-                    </Link>
                   </div>
 
                   <div className="h-px bg-border" />
 
                   <div className="pt-4">
                     <div className="grid grid-cols-2 gap-2 lg:grid-cols-3">
-                      {item.children.map((child) => (
+                      {item.children.map((child: NavItem) => (
                         <Link
                           key={child.label}
                           to={child.to}

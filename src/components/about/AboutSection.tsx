@@ -15,7 +15,7 @@ const AboutSection = () => {
       <div className="pointer-events-none absolute inset-0">
         {/* grid */}
         <div className="absolute inset-0 opacity-30">
-          <div className="h-full w-full bg-[linear-gradient(to_right,rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.08)_1px,transparent_1px)] bg-[size:56px_56px]" />
+          <div className="h-full w-full bg-[linear-gradient(to_right,rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.08)_1px,transparent_1px)] bg-size-[56px_56px]" />
         </div>
 
         {/* glow */}
@@ -41,9 +41,9 @@ const AboutSection = () => {
 
           {/* RIGHT CONTENT */}
           <div className="rounded-3xl bg-white/10 p-8 backdrop-blur-xl shadow-xl md:p-10">
-            <div className="inline-flex items-center gap-2 rounded-full border border-border bg-gradient-to-r from-[rgb(var(--color-accent-purple))]/15 via-[rgb(var(--color-accent-cyan))]/10 to-[rgb(var(--color-accent-magenta))]/15 px-4 py-2 text-white font-semibold text-heading shadow-sm">
+            <div className="inline-flex items-center gap-2 rounded-full border border-border bg-linear-to-r from-[rgb(var(--color-accent-purple))]/15 via-[rgb(var(--color-accent-cyan))]/10 to-[rgb(var(--color-accent-magenta))]/15 px-4 py-2 text-white font-semibold text-heading shadow-sm">
               <span className="h-2 w-2 rounded-full bg-[rgb(var(--color-accent-purple))]" />
-              ABOUT TYL TECH
+              ABOUT Sunberry
             </div>
 
             <h2 className="mb-6 text-3xl font-semibold leading-tight md:text-4xl">

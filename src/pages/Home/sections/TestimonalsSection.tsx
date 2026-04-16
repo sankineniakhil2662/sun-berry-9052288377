@@ -4,7 +4,7 @@ const testimonials = [
   {
     name: "Priya Mason",
     rating: 5,
-    text: "Working with TYL-Tech was seamless. Their design support and frontend development were spot on.",
+    text: "Working with Sunberry was seamless. Their design support and frontend development were spot on.",
   },
   {
     name: "Ankit Verma",
@@ -14,7 +14,7 @@ const testimonials = [
   {
     name: "Meena Raghav",
     rating: 5,
-    text: "Great team to collaborate with. TYL-Tech helped us hit a critical deadline with excellent support.",
+    text: "Great team to collaborate with. Sunberry helped us hit a critical deadline with excellent support.",
   },
   {
     name: "Ravi Sharma",
@@ -68,7 +68,7 @@ const TestimonialsSection = () => {
 
   return (
     <section className="w-full bg-bg py-20 overflow-hidden">
-      <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-350 px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-muted">
             Testimonials
@@ -82,7 +82,7 @@ const TestimonialsSection = () => {
             </h2>
           </div>
           <p className="mt-3 text-base text-body">
-            What our clients say about working with TYL-Tech.
+            What our clients say about working with Sunberry.
           </p>
         </div>
       </div>

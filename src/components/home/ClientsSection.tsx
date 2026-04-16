@@ -61,15 +61,15 @@ export default function ClientsSection() {
             </span>
           </h2>
           <p className="mt-3 text-sm text-muted sm:text-base">
-            Businesses across industries rely on TYL-Tech to build scalable digital products and platforms.
+            Businesses across industries rely on Sunberry to build scalable digital products and platforms.
           </p>
         </div>
 
         {/* Marquee */}
         <div className="relative mt-12 overflow-hidden">
           {/* Fade edges (IMPORTANT: no from-bg) */}
-          <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-28 bg-gradient-to-r from-[rgb(var(--color-bg))] to-transparent" />
-          <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-28 bg-gradient-to-l from-[rgb(var(--color-bg))] to-transparent" />
+          <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-28 bg-linear-to-r from-[rgb(var(--color-bg))] to-transparent" />
+          <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-28 bg-linear-to-l from-[rgb(var(--color-bg))] to-transparent" />
 
           <motion.div
             className="flex w-max gap-10 py-2"

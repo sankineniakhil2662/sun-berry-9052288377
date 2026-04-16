@@ -107,15 +107,15 @@ export const webDevelopmentData = {
   },
   preferredPartner: {
     eyebrow: "why choose us?",
-    title: "Why TYL Tech is the\nPreferred Web Development\nPartner?",
+    title: "Why Sunberry is the\nPreferred Web Development\nPartner?",
     description:
-      "At Tyl Tech, we apply the most advanced agile methodology to create attractive websites that inspire and refresh your audience’s mind and present your brand identity. Our Website Development Company in India puts quality first so your website will be rendered perfectly and will have the same functionality in any device and screen size.",
+      "At Sunberry, we apply the most advanced agile methodology to create attractive websites that inspire and refresh your audience’s mind and present your brand identity. Our Website Development Company in India puts quality first so your website will be rendered perfectly and will have the same functionality in any device and screen size.",
     cards: [
       {
         number: "01",
         title: "User-Centric Approach",
         description:
-          "Innoit Labs carefully analyse each stage of the user journey and work closely with clients to provide custom solutions based on brand objectives and deliver a holistic experience.",
+          "Sunberry carefully analyse each stage of the user journey and work closely with clients to provide custom solutions based on brand objectives and deliver a holistic experience.",
       },
       {
         number: "02",
@@ -127,13 +127,13 @@ export const webDevelopmentData = {
         number: "03",
         title: "Complete Transparency",
         description:
-          "Innoit Labs start with transparency from project kickoff through delivery, including client feedback incorporation to deliver beyond expectations.",
+          "Sunberry start with transparency from project kickoff through delivery, including client feedback incorporation to deliver beyond expectations.",
       },
       {
         number: "04",
         title: "Quality Assurance",
         description:
-          "Innoit Labs is committed to complying with industry standards so that we can run tests extensively to guarantee that the product runs smoothly and without any glitches.",
+          "Sunberry is committed to complying with industry standards so that we can run tests extensively to guarantee that the product runs smoothly and without any glitches.",
       },
       {
         number: "05",
@@ -145,7 +145,7 @@ export const webDevelopmentData = {
         number: "06",
         title: "Future Proof",
         description:
-          "Innoit Labs is a flexible Website Development Company in India, that adapts to your business needs, using the latest scalable technologies to meet the challenges and opportunities ahead.",
+          "Sunberry is a flexible Website Development Company in India, that adapts to your business needs, using the latest scalable technologies to meet the challenges and opportunities ahead.",
       },
     ],
   },

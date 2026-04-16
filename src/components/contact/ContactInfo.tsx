@@ -92,10 +92,10 @@ export default function ContactInfo() {
             label="EMAIL"
             value={
               <a
-                href="mailto:hello@tyltech.com"
+                href="mailto:hello@Sunberry.com"
                 className="text-[rgb(var(--color-accent-cyan))] transition hover:text-white"
               >
-                hello@tyltech.com
+                hello@Sunberry.com
               </a>
             }
           />

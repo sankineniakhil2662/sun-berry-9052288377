@@ -132,7 +132,7 @@ function SectionCard({
       </div>
 
       {/* subtle bottom highlight */}
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-black/5 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-20 bg-linear-to-t from-black/5 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
     </motion.article>
   );
 }
@@ -151,7 +151,7 @@ export default function IndustryDetailPage() {
       <section className="relative overflow-hidden bg-[#062a64] text-white">
         <div className="pointer-events-none absolute inset-0">
           <div className="absolute inset-0 opacity-40">
-            <div className="h-full w-full bg-[linear-gradient(to_right,rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.08)_1px,transparent_1px)] bg-[size:56px_56px]" />
+            <div className="h-full w-full bg-[linear-gradient(to_right,rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.08)_1px,transparent_1px)] bg-size-[56px_56px]" />
           </div>
           <div className="absolute -right-24 -top-24 h-80 w-80 rounded-full bg-white/10 blur-2xl" />
           <div className="absolute -left-24 bottom-0 h-80 w-80 rounded-full bg-white/10 blur-2xl" />
@@ -319,12 +319,7 @@ export default function IndustryDetailPage() {
           </div>
 
           <div className="flex items-center gap-3">
-            <Link
-              to="/industries"
-              className="rounded-2xl border border-border bg-bg px-5 py-3 text-sm font-semibold text-heading transition hover:bg-surface"
-            >
-              View All Industries
-            </Link>
+            
             <Link
               to="/contact"
               className={`rounded-2xl px-5 py-3 text-sm font-semibold text-white shadow-card transition ${a.btn}`}

@@ -1,5 +1,5 @@
 // src/theme.ts
-// TYL Tech – Design System Theme
+// Sunberry – Design System Theme
 
 export const theme = {
     brand: {

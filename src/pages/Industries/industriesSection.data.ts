@@ -77,7 +77,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Overview",
         title: "Revolutionize Agriculture with Smart Digital Solutions",
         description:
-          "At TYL Tech, we are driven by a vision to revolutionize the agricultural ecosystem through smart, innovative technology. As a trusted Agriculture & Farming App Development Company, we deliver cutting-edge agriculture app development services that empower farmers, agribusinesses, and startups to boost productivity and operational efficiency.",
+          "At Sunberry, we are driven by a vision to revolutionize the agricultural ecosystem through smart, innovative technology. As a trusted Agriculture & Farming App Development Company, we deliver cutting-edge agriculture app development services that empower farmers, agribusinesses, and startups to boost productivity and operational efficiency.",
         points: [
           "Intelligent crop monitoring and farm analytics",
           "Data-driven resource planning for water, fertilizers, and labor",
@@ -89,7 +89,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Our Methodology",
         title: "A Proven Delivery Process — From Concept to Deployment",
         description:
-          "TYL Tech is a leading Agriculture & Farming App Development Company in Hyderabad, specializing in crafting engaging, high-performance mobile and web applications. We focus on enhancing user experiences through thoughtful design, robust development, and innovative technology.",
+          "Sunberry is a leading Agriculture & Farming App Development Company in Hyderabad, specializing in crafting engaging, high-performance mobile and web applications. We focus on enhancing user experiences through thoughtful design, robust development, and innovative technology.",
         points: [
           "Discovery and requirement mapping with clear milestones",
           "UI/UX prototypes aligned to your real workflows",
@@ -102,7 +102,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Welcome to Our Company",
         title: "Empowering Farmers with Innovative Agri-Tech",
         description:
-          "Welcome to TYL Tech, where technology and innovation come together to cultivate a smarter, more sustainable farming ecosystem. We build intelligent, secure, and scalable platforms that simplify farm management, enhance productivity, and support data-driven decision-making.",
+          "Welcome to Sunberry, where technology and innovation come together to cultivate a smarter, more sustainable farming ecosystem. We build intelligent, secure, and scalable platforms that simplify farm management, enhance productivity, and support data-driven decision-making.",
         points: [
           "Smart irrigation, equipment tracking, and resource planning",
           "Farm dashboards for real-time insights and reporting",
@@ -138,7 +138,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Agriculture & Farming App Development Company",
         title: "High-Performance Agri-Tech Platforms Built to Scale",
         description:
-          "TYL Tech builds smart, scalable, and innovative digital solutions for agriculture and agribusiness. From precision farming and crop monitoring to weather forecasting and farm management platforms—our systems are designed for long-term growth.",
+          "Sunberry builds smart, scalable, and innovative digital solutions for agriculture and agribusiness. From precision farming and crop monitoring to weather forecasting and farm management platforms—our systems are designed for long-term growth.",
       },
       {
         key: "benefits",
@@ -155,7 +155,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
       },
       {
         key: "whyChoose",
-        eyebrow: "Why Choose TYL Tech?",
+        eyebrow: "Why Choose Sunberry?",
         title: "A Trusted Partner for Modern Agriculture Software",
         points: [
           "Strict NDAs ensuring full confidentiality",
@@ -190,7 +190,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Overview",
         title: "Smart, Secure Doctor Appointment & Consultation Apps",
         description:
-          "TYL Tech is a leading Doctor Appointment App Development Company, delivering smart, secure, and user-friendly healthcare app solutions. We help hospitals, clinics, and healthcare startups simplify patient appointment booking, manage real-time doctor schedules, and enable seamless teleconsultations through feature-rich mobile applications for both Android and iOS platforms.",
+          "Sunberry is a leading Doctor Appointment App Development Company, delivering smart, secure, and user-friendly healthcare app solutions. We help hospitals, clinics, and healthcare startups simplify patient appointment booking, manage real-time doctor schedules, and enable seamless teleconsultations through feature-rich mobile applications for both Android and iOS platforms.",
         points: [
           "Real-time appointment booking and schedule management",
           "Teleconsultations built for smooth patient experiences",
@@ -202,7 +202,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Our Methodology",
         title: "A Proven Delivery Process — From Concept to Deployment",
         description:
-          "TYL Tech is a leading Doctor Consultation App Development Company in Hyderabad, specializing in creating and enhancing exceptional user experiences through the design and development of innovative mobile and web applications. We build intuitive, secure, and high-performance digital solutions that connect patients and healthcare providers seamlessly.",
+          "Sunberry is a leading Doctor Consultation App Development Company in Hyderabad, specializing in creating and enhancing exceptional user experiences through the design and development of innovative mobile and web applications. We build intuitive, secure, and high-performance digital solutions that connect patients and healthcare providers seamlessly.",
         points: [
           "Requirements discovery aligned to clinical workflows",
           "UI/UX design optimized for patients and providers",
@@ -215,7 +215,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Welcome to Our Company",
         title: "Trusted Partner in Doctor Appointment App Development",
         description:
-          "At TYL Tech, our expert team delivers fully customized healthcare applications powered by advanced features such as real-time appointment scheduling, telemedicine integration, automated reminders, and Electronic Health Record (EHR) support.",
+          "At Sunberry, our expert team delivers fully customized healthcare applications powered by advanced features such as real-time appointment scheduling, telemedicine integration, automated reminders, and Electronic Health Record (EHR) support.",
         points: [
           "Telemedicine integration with reminders and notifications",
           "EHR support with secure access controls",
@@ -227,7 +227,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Work With Us",
         title: "Work With a Trusted Doctor Appointment App Development Team",
         description:
-          "At TYL Tech, we collaborate with healthcare professionals, innovative startups, and medical institutions to deliver secure, user-friendly, and scalable healthcare solutions that make a real impact.",
+          "At Sunberry, we collaborate with healthcare professionals, innovative startups, and medical institutions to deliver secure, user-friendly, and scalable healthcare solutions that make a real impact.",
         points: [
           "Modern patient-first UI/UX with smooth booking flows",
           "Reliable backend systems built for real-world healthcare usage",
@@ -239,7 +239,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Start Work With Us",
         title: "Build Your Doctor Appointment App with Confidence",
         description:
-          "Start your journey with TYL Tech to transform your healthcare vision into a powerful digital solution. Whether you’re launching a new platform or upgrading an existing one, we ensure a smooth, secure, and scalable development process.",
+          "Start your journey with Sunberry to transform your healthcare vision into a powerful digital solution. Whether you’re launching a new platform or upgrading an existing one, we ensure a smooth, secure, and scalable development process.",
         points: [
           "Real-time scheduling, video consultations, and patient tools",
           "Clean UI with provider-friendly dashboards and controls",
@@ -268,7 +268,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
       },
       {
         key: "whyChoose",
-        eyebrow: "Why Choose TYL Tech?",
+        eyebrow: "Why Choose Sunberry?",
         title: "Reliable, Secure Healthcare App Development Partner",
         points: [
           "Deep expertise in healthcare app development and workflows",
@@ -303,7 +303,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Overview",
         title: "Build the Future of Digital Finance with Confidence",
         description:
-          "TYL Tech is a trusted Fintech App Development Company dedicated to shaping the future of digital finance. We build secure, feature-rich, and user-centric fintech applications that enable businesses to deliver seamless, reliable, and modern financial services.",
+          "Sunberry is a trusted Fintech App Development Company dedicated to shaping the future of digital finance. We build secure, feature-rich, and user-centric fintech applications that enable businesses to deliver seamless, reliable, and modern financial services.",
         points: [
           "Secure, user-first fintech experiences built for trust",
           "Compliance-ready systems engineered for reliability",
@@ -315,7 +315,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Our Methodology",
         title: "A Proven Delivery Process — From Concept to Deployment",
         description:
-          "TYL Tech is a leading Fintech App Development Company in Hyderabad, specializing in enhancing user experiences through innovative mobile and web applications. We collaborate closely to turn ideas into impactful digital products and support successful launch and growth in the fintech ecosystem.",
+          "Sunberry is a leading Fintech App Development Company in Hyderabad, specializing in enhancing user experiences through innovative mobile and web applications. We collaborate closely to turn ideas into impactful digital products and support successful launch and growth in the fintech ecosystem.",
         points: [
           "Discovery and product strategy aligned to fintech regulations",
           "UX flows that reduce friction and increase conversion",
@@ -328,7 +328,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Welcome to Our Company",
         title: "Transforming Financial Services into Digital Experiences",
         description:
-          "As a leading Fintech App Development Company, TYL Tech builds secure, intuitive, and future-ready digital financial solutions. From mobile banking platforms to wallets and investment tools, our solutions are engineered for performance, trust, and scalability.",
+          "As a leading Fintech App Development Company, Sunberry builds secure, intuitive, and future-ready digital financial solutions. From mobile banking platforms to wallets and investment tools, our solutions are engineered for performance, trust, and scalability.",
         points: [
           "Regulatory-aligned architecture and best practices",
           "Cross-platform experiences with smooth, fast workflows",
@@ -352,7 +352,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Start Work With Us",
         title: "Let’s Build Smarter Financial Solutions",
         description:
-          "Partner with TYL Tech to transform financial ideas into powerful, innovative digital solutions. Our fintech app development services help startups and enterprises launch smarter, operate securely, and scale without limits.",
+          "Partner with Sunberry to transform financial ideas into powerful, innovative digital solutions. Our fintech app development services help startups and enterprises launch smarter, operate securely, and scale without limits.",
         points: [
           "Product planning aligned to your monetization and compliance needs",
           "Secure builds with performance-focused architecture",
@@ -364,7 +364,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Fintech App Development Company",
         title: "Custom Fintech Platforms Built for Trust and Scale",
         description:
-          "TYL Tech delivers end-to-end fintech app development—from strategy and UI/UX to deployment and long-term support. We build mobile banking, wallets, payment gateways, lending, and investment platforms that simplify operations and elevate engagement.",
+          "Sunberry delivers end-to-end fintech app development—from strategy and UI/UX to deployment and long-term support. We build mobile banking, wallets, payment gateways, lending, and investment platforms that simplify operations and elevate engagement.",
       },
       {
         key: "benefits",
@@ -381,7 +381,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
       },
       {
         key: "whyChoose",
-        eyebrow: "Why Choose TYL Tech?",
+        eyebrow: "Why Choose Sunberry?",
         title: "Reliable Fintech Delivery with a Security-First Mindset",
         points: [
           "Strict NDA policies to protect your idea and data",
@@ -416,7 +416,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Overview",
         title: "Build a Future-Ready Grocery Delivery Platform",
         description:
-          "At TYL Tech, we take pride in being a trusted Grocery App Development Company dedicated to helping businesses succeed in the digital age. With a strong focus on innovation, user-centric design, and scalable technology, we build grocery delivery applications that are reliable, efficient, and perfectly aligned with your business goals. Whether you’re launching a new grocery startup or enhancing an existing platform, TYL Tech is here to transform your grocery app idea into a powerful, future-ready digital solution.",
+          "At Sunberry, we take pride in being a trusted Grocery App Development Company dedicated to helping businesses succeed in the digital age. With a strong focus on innovation, user-centric design, and scalable technology, we build grocery delivery applications that are reliable, efficient, and perfectly aligned with your business goals. Whether you’re launching a new grocery startup or enhancing an existing platform, Sunberry is here to transform your grocery app idea into a powerful, future-ready digital solution.",
         points: [
           "User-first grocery shopping experiences that increase retention",
           "Scalable architecture built for growth and peak traffic",
@@ -428,7 +428,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Our Methodology",
         title: "A Proven Delivery Process — From Concept to Deployment",
         description:
-          "TYL Tech is a leading Grocery Delivery App Development company in Hyderabad, specialising in crafting high-performance mobile and web applications that deliver exceptional user experiences. We collaborate closely with startups, entrepreneurs, and established organisations to transform ideas into powerful products and promote them to achieve measurable success.",
+          "Sunberry is a leading Grocery Delivery App Development company in Hyderabad, specialising in crafting high-performance mobile and web applications that deliver exceptional user experiences. We collaborate closely with startups, entrepreneurs, and established organisations to transform ideas into powerful products and promote them to achieve measurable success.",
         points: [
           "Discovery, roadmap, and feature prioritization aligned to business goals",
           "UI/UX design with clear journeys for browse → cart → checkout → delivery",
@@ -441,7 +441,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Welcome to Our Company",
         title: "Driving Growth Through Custom Grocery Apps",
         description:
-          "Welcome to TYL Tech—where technology meets convenience. We design and develop custom grocery applications tailored to your unique business goals. From intuitive shopping apps to fully integrated grocery delivery ecosystems, our solutions are scalable, secure, and performance-driven—built to deliver a smooth shopping experience across iOS and Android.",
+          "Welcome to Sunberry—where technology meets convenience. We design and develop custom grocery applications tailored to your unique business goals. From intuitive shopping apps to fully integrated grocery delivery ecosystems, our solutions are scalable, secure, and performance-driven—built to deliver a smooth shopping experience across iOS and Android.",
         points: [
           "Smart catalogs, advanced search, and filtering for fast discovery",
           "Multiple payment gateways with secure transaction handling",
@@ -477,7 +477,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Grocery App Development Company",
         title: "Custom Grocery Apps Designed for Scale, Speed, and Retention",
         description:
-          "TYL Tech delivers robust grocery delivery applications that combine modern UI/UX with reliable performance. From shopping experiences to delivery operations, we build secure, scalable solutions tailored to your market, audience, and growth plan.",
+          "Sunberry delivers robust grocery delivery applications that combine modern UI/UX with reliable performance. From shopping experiences to delivery operations, we build secure, scalable solutions tailored to your market, audience, and growth plan.",
       },
       {
         key: "benefits",
@@ -494,7 +494,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
       },
       {
         key: "whyChoose",
-        eyebrow: "Why Choose TYL Tech?",
+        eyebrow: "Why Choose Sunberry?",
         title: "A Strong Technology Partner for Grocery Growth",
         points: [
           "Industry-focused expertise in retail and e-commerce workflows",
@@ -529,7 +529,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Overview",
         title: "Build Smart Connected Products with IoT",
         description:
-          "TYL Tech delivers reliable and innovative IoT software development services. We help businesses build smart, connected solutions tailored to their goals and operational needs. Our expert team creates scalable, secure, and high-performance IoT applications that enhance efficiency, enable real-time insights, and accelerate digital transformation across industries.",
+          "Sunberry delivers reliable and innovative IoT software development services. We help businesses build smart, connected solutions tailored to their goals and operational needs. Our expert team creates scalable, secure, and high-performance IoT applications that enhance efficiency, enable real-time insights, and accelerate digital transformation across industries.",
         points: [
           "Secure, scalable IoT systems built for real-world environments",
           "Real-time data visibility for faster decision-making",
@@ -541,7 +541,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Our Methodology",
         title: "A Proven Process — From Concept to Deployment",
         description:
-          "TYL Tech is a leading IoT development company in Hyderabad, specializing in designing and developing innovative mobile and web applications that elevate user experience and drive digital engagement. We work closely with startups, enterprises, and organizations to conceptualize, build, and promote smart, connected products.",
+          "Sunberry is a leading IoT development company in Hyderabad, specializing in designing and developing innovative mobile and web applications that elevate user experience and drive digital engagement. We work closely with startups, enterprises, and organizations to conceptualize, build, and promote smart, connected products.",
         points: [
           "Discovery + architecture planning for device, cloud, and data layers",
           "Prototype and validation to reduce risk before scale",
@@ -554,7 +554,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Welcome to Our Company",
         title: "Your Trusted IoT Development Company",
         description:
-          "Welcome to TYL Tech. We specialize in building smart, connected solutions that empower businesses in an intelligent digital world. With strong expertise in device integration, data connectivity, and scalable platforms, we deliver end-to-end IoT development—from strategy and prototyping to deployment and ongoing support.",
+          "Welcome to Sunberry. We specialize in building smart, connected solutions that empower businesses in an intelligent digital world. With strong expertise in device integration, data connectivity, and scalable platforms, we deliver end-to-end IoT development—from strategy and prototyping to deployment and ongoing support.",
         points: [
           "Device connectivity, data ingestion, and platform scalability",
           "Secure systems aligned to business objectives and compliance needs",
@@ -566,7 +566,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Work With Us",
         title: "Partner With a Leading IoT Product Development Team",
         description:
-          "At TYL Tech, we combine deep technical expertise with a forward-thinking approach to help businesses stay ahead. We deliver results-driven IoT solutions that connect devices, people, and processes—unlocking new opportunities for innovation and operational excellence.",
+          "At Sunberry, we combine deep technical expertise with a forward-thinking approach to help businesses stay ahead. We deliver results-driven IoT solutions that connect devices, people, and processes—unlocking new opportunities for innovation and operational excellence.",
         points: [
           "End-to-end IoT software development tailored to your product vision",
           "Smart connectivity that improves efficiency and reduces manual overhead",
@@ -590,7 +590,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "IoT Development Services",
         title: "End-to-End IoT Services for Connected Business Ecosystems",
         description:
-          "TYL Tech provides custom IoT development services that transform traditional systems into intelligent, data-driven solutions. We design reliable and scalable platforms that connect devices, process real-time data, and improve operational efficiency—across industrial automation, smart home solutions, and remote monitoring systems.",
+          "Sunberry provides custom IoT development services that transform traditional systems into intelligent, data-driven solutions. We design reliable and scalable platforms that connect devices, process real-time data, and improve operational efficiency—across industrial automation, smart home solutions, and remote monitoring systems.",
       },
       {
         key: "benefits",
@@ -606,7 +606,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
       },
       {
         key: "whyChoose",
-        eyebrow: "Why Choose TYL Tech?",
+        eyebrow: "Why Choose Sunberry?",
         title: "A Reliable IoT Partner for Secure, Scalable Innovation",
         points: [
           "Secure, high-performance IoT apps aligned with business goals",
@@ -640,7 +640,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Overview",
         title: "Cutting-Edge Logistics Software for Smarter Operations",
         description:
-          "TYL Tech delivers scalable, secure, and user-friendly logistics software solutions designed for modern transportation and supply chain operations. Our platforms streamline workflows, enable real-time tracking, and boost overall efficiency—helping businesses operate with greater agility and control.",
+          "Sunberry delivers scalable, secure, and user-friendly logistics software solutions designed for modern transportation and supply chain operations. Our platforms streamline workflows, enable real-time tracking, and boost overall efficiency—helping businesses operate with greater agility and control.",
         points: [
           "Scalable logistics systems built for growth",
           "Real-time tracking + operational visibility",
@@ -652,7 +652,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Our Methodology",
         title: "A Proven Delivery Process — From Concept to Deployment",
         description:
-          "TYL Tech is a leading logistics app development company in Hyderabad, focused on building high-quality mobile and web applications that enhance user experience and drive digital efficiency. We collaborate closely with startups, enterprises, and organizations to conceptualize, build, and promote innovative logistics solutions.",
+          "Sunberry is a leading logistics app development company in Hyderabad, focused on building high-quality mobile and web applications that enhance user experience and drive digital efficiency. We collaborate closely with startups, enterprises, and organizations to conceptualize, build, and promote innovative logistics solutions.",
         points: [
           "Discovery workshops and clear project milestones",
           "UI/UX + architecture aligned to real logistics workflows",
@@ -665,7 +665,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Welcome to Our Company",
         title: "Your Trusted Logistics App Development Company",
         description:
-          "TYL Tech builds powerful logistics technology solutions packed with smart features like real-time vehicle tracking, route optimization, delivery scheduling, driver management, geo-fencing, automated alerts, and actionable analytics—designed to simplify complex logistics workflows.",
+          "Sunberry builds powerful logistics technology solutions packed with smart features like real-time vehicle tracking, route optimization, delivery scheduling, driver management, geo-fencing, automated alerts, and actionable analytics—designed to simplify complex logistics workflows.",
         points: [
           "Fleet, warehouse, courier, and last-mile delivery platforms",
           "GPS + Cloud + IoT + AI-ready integrations",
@@ -677,7 +677,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Work With Us",
         title: "Smart Supply Chain Solutions That Deliver Real Results",
         description:
-          "Partner with TYL Tech to build custom logistics software that improves efficiency, real-time visibility, and overall operational performance. We integrate seamlessly with your existing systems while delivering measurable outcomes and long-term value.",
+          "Partner with Sunberry to build custom logistics software that improves efficiency, real-time visibility, and overall operational performance. We integrate seamlessly with your existing systems while delivering measurable outcomes and long-term value.",
         points: [
           "Fleet management, route planning, shipment tracking",
           "Warehouse automation and workflow optimization",
@@ -701,7 +701,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Logistics Software Development Company",
         title: "Custom Logistics Apps Are No Longer Optional",
         description:
-          "In today’s fast-paced digital landscape, logistics businesses need smart technology to automate workflows, reduce delays, and improve delivery efficiency. TYL Tech builds high-performance solutions—from real-time delivery tracking and warehouse systems to complete end-to-end logistics platforms—engineered for long-term growth.",
+          "In today’s fast-paced digital landscape, logistics businesses need smart technology to automate workflows, reduce delays, and improve delivery efficiency. Sunberry builds high-performance solutions—from real-time delivery tracking and warehouse systems to complete end-to-end logistics platforms—engineered for long-term growth.",
       },
       {
         key: "benefits",
@@ -718,7 +718,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
       },
       {
         key: "whyChoose",
-        eyebrow: "Why Choose TYL Tech?",
+        eyebrow: "Why Choose Sunberry?",
         title: "A Reliable Partner for Logistics Digital Transformation",
         points: [
           "Industry-specific expertise in supply chain operations",
@@ -752,7 +752,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Overview",
         title: "Turn Bold Ideas into High-Impact On-Demand Apps",
         description:
-          "TYL Tech is a results-driven On-Demand App Development Company focused on building custom applications that enable businesses to deliver fast, reliable, and engaging experiences. We bridge innovation and execution with smart, growth-ready solutions designed for real-world performance.",
+          "Sunberry is a results-driven On-Demand App Development Company focused on building custom applications that enable businesses to deliver fast, reliable, and engaging experiences. We bridge innovation and execution with smart, growth-ready solutions designed for real-world performance.",
         points: [
           "Delivery, booking, logistics, and service platforms",
           "Scalable architecture with modern app stacks",
@@ -764,7 +764,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Our Methodology",
         title: "From Strategy to Launch — Built for Speed and Reliability",
         description:
-          "TYL Tech is a leading On-Demand App Development Company in Hyderabad, specializing in enhancing user experiences through innovative mobile and web application design and development. We collaborate closely to build and strategically position your product for maximum reach and success.",
+          "Sunberry is a leading On-Demand App Development Company in Hyderabad, specializing in enhancing user experiences through innovative mobile and web application design and development. We collaborate closely to build and strategically position your product for maximum reach and success.",
         points: [
           "Discovery + roadmap aligned to business goals",
           "UI/UX that improves conversion and retention",
@@ -789,7 +789,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Work With Us",
         title: "Let’s Build the Future of On-Demand Experiences Together",
         description:
-          "Collaboration with TYL Tech is seamless, transparent, and results-driven. From concept to launch, we deliver high-performing, scalable, and engaging apps built to compete in the on-demand economy.",
+          "Collaboration with Sunberry is seamless, transparent, and results-driven. From concept to launch, we deliver high-performing, scalable, and engaging apps built to compete in the on-demand economy.",
         points: [
           "Clear communication + milestone-based execution",
           "Feature planning for real operational needs",
@@ -813,7 +813,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "On-Demand App Development Company",
         title: "Custom On-Demand Apps Built to Perform and Scale",
         description:
-          "TYL Tech builds intelligent apps that streamline operations, enhance customer engagement, and accelerate business growth—across industries like ride-sharing, food delivery, healthcare, logistics, and home services.",
+          "Sunberry builds intelligent apps that streamline operations, enhance customer engagement, and accelerate business growth—across industries like ride-sharing, food delivery, healthcare, logistics, and home services.",
       },
       {
         key: "benefits",
@@ -830,7 +830,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
       },
       {
         key: "whyChoose",
-        eyebrow: "Why Choose TYL Tech?",
+        eyebrow: "Why Choose Sunberry?",
         title: "A Trusted Partner for On-Demand Product Success",
         points: [
           "Strict NDAs ensuring full confidentiality",
@@ -865,7 +865,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Overview",
         title: "Digitize Security Operations with Smart, Mobile-First Solutions",
         description:
-          "TYL Tech builds reliable and intelligent security guard apps that help security agencies, property managers, and facility owners manage patrols, monitor activity, and streamline daily operations with real-time tracking and reporting.",
+          "Sunberry builds reliable and intelligent security guard apps that help security agencies, property managers, and facility owners manage patrols, monitor activity, and streamline daily operations with real-time tracking and reporting.",
         points: [
           "GPS-enabled guard tracking and patrol workflows",
           "Incident reporting with photo/video support",
@@ -877,7 +877,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Our Methodology",
         title: "A Proven Delivery Process — From Concept to Deployment",
         description:
-          "TYL Tech is a leading Security Management App Development Company in Hyderabad, focused on delivering exceptional user experiences through innovative mobile and web application design and development. We build intelligent, secure, and user-friendly solutions that strengthen security operations.",
+          "Sunberry is a leading Security Management App Development Company in Hyderabad, focused on delivering exceptional user experiences through innovative mobile and web application design and development. We build intelligent, secure, and user-friendly solutions that strengthen security operations.",
         points: [
           "Workflow discovery + compliance-first planning",
           "UI/UX designed for guards, supervisors, and clients",
@@ -902,7 +902,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Work With Us",
         title: "Smart Security Guard Apps for Modern Safety Needs",
         description:
-          "TYL Tech combines modern technologies with industry expertise to deliver guard patrol apps and security management platforms built for usability, reliability, and real-time decision-making.",
+          "Sunberry combines modern technologies with industry expertise to deliver guard patrol apps and security management platforms built for usability, reliability, and real-time decision-making.",
         points: [
           "Live guard tracking + tour check-ins",
           "Cloud reporting + analytics for supervisors",
@@ -926,7 +926,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Security Guard App Development Company",
         title: "A Digital Command Center for Security Operations",
         description:
-          "Whether you need a GPS guard tracking app, patrol verification system, multi-location platform, or client portal—TYL Tech builds scalable security solutions designed for performance, security, and growth.",
+          "Whether you need a GPS guard tracking app, patrol verification system, multi-location platform, or client portal—Sunberry builds scalable security solutions designed for performance, security, and growth.",
       },
       {
         key: "benefits",
@@ -943,7 +943,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
       },
       {
         key: "whyChoose",
-        eyebrow: "Why Choose TYL Tech?",
+        eyebrow: "Why Choose Sunberry?",
         title: "Secure, Scalable Builds Aligned to Your Workflow",
         points: [
           "Strict NDAs to protect business logic and data",
@@ -978,7 +978,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Overview",
         title: "Transform Businesses with Next-Gen Blockchain Innovation",
         description:
-          "At TYL Tech, we deliver secure, transparent, and scalable blockchain solutions powered by advanced technologies. Our blockchain developers build decentralized applications that enhance trust, automate workflows, and improve efficiency across industries.",
+          "At Sunberry, we deliver secure, transparent, and scalable blockchain solutions powered by advanced technologies. Our blockchain developers build decentralized applications that enhance trust, automate workflows, and improve efficiency across industries.",
         points: [
           "Decentralized apps (DApps) built for performance and trust",
           "Smart contracts to automate workflows and reduce intermediaries",
@@ -990,7 +990,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Our Methodology",
         title: "A Proven Delivery Process — From Concept to Deployment",
         description:
-          "TYL Tech is a leading Blockchain Development Company in Hyderabad, focused on building user-centric blockchain products that deliver measurable business value. We collaborate closely with founders and teams to conceptualize, build, and promote blockchain-powered solutions.",
+          "Sunberry is a leading Blockchain Development Company in Hyderabad, focused on building user-centric blockchain products that deliver measurable business value. We collaborate closely with founders and teams to conceptualize, build, and promote blockchain-powered solutions.",
         points: [
           "Discovery + architecture planning aligned to business outcomes",
           "Prototype + UI/UX built around real user flows",
@@ -1039,7 +1039,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Blockchain Development Services",
         title: "Secure, Scalable Blockchain Ecosystems Built for Growth",
         description:
-          "TYL Tech delivers end-to-end blockchain development—from DApps and crypto wallets to smart contracts and NFT marketplaces—designed for security, performance, and long-term reliability.",
+          "Sunberry delivers end-to-end blockchain development—from DApps and crypto wallets to smart contracts and NFT marketplaces—designed for security, performance, and long-term reliability.",
       },
       {
         key: "benefits",
@@ -1056,7 +1056,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
       },
       {
         key: "whyChoose",
-        eyebrow: "Why Choose TYL Tech?",
+        eyebrow: "Why Choose Sunberry?",
         title: "A Trusted Blockchain Partner Focused on Security and Reliability",
         points: [
           "Strict NDAs to ensure complete confidentiality",
@@ -1091,7 +1091,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Overview",
         title: "Build High-Performance E-Commerce Apps That Convert",
         description:
-          "TYL Tech builds secure, scalable, and user-friendly e-commerce applications tailored to your business goals. From payment gateways and inventory management to AI-powered recommendations—our solutions improve shopping experiences and drive measurable growth.",
+          "Sunberry builds secure, scalable, and user-friendly e-commerce applications tailored to your business goals. From payment gateways and inventory management to AI-powered recommendations—our solutions improve shopping experiences and drive measurable growth.",
         points: [
           "Secure checkout with payment gateway integrations",
           "Real-time inventory + order management workflows",
@@ -1152,7 +1152,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "E-Commerce Development Company",
         title: "A Full-Service E-Commerce Partner for Modern Businesses",
         description:
-          "TYL Tech builds robust e-commerce platforms that stand out in competitive markets—combining modern design, strong performance, and growth-focused strategy.",
+          "Sunberry builds robust e-commerce platforms that stand out in competitive markets—combining modern design, strong performance, and growth-focused strategy.",
       },
       {
         key: "benefits",
@@ -1169,7 +1169,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
       },
       {
         key: "whyChoose",
-        eyebrow: "Why Choose TYL Tech?",
+        eyebrow: "Why Choose Sunberry?",
         title: "Reliable, Secure, and Conversion-Focused E-Commerce Builds",
         points: [
           "Strict NDAs to protect your privacy and business logic",
@@ -1204,7 +1204,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Overview",
         title: "Food Delivery Apps Built for Speed, Scale, and Satisfaction",
         description:
-          "TYL Tech builds robust, scalable, and user-friendly food delivery apps for restaurants, cloud kitchens, and food startups. We create custom solutions that simplify ordering, enable real-time tracking, and support secure payments—built to scale with your growth.",
+          "Sunberry builds robust, scalable, and user-friendly food delivery apps for restaurants, cloud kitchens, and food startups. We create custom solutions that simplify ordering, enable real-time tracking, and support secure payments—built to scale with your growth.",
         points: [
           "Swiggy/Zomato-style marketplace or single-brand restaurant apps",
           "Engaging UI/UX for customers, delivery partners, and admins",
@@ -1265,7 +1265,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Food Delivery App Development Company",
         title: "End-to-End Food Delivery Ecosystems Built for Growth",
         description:
-          "TYL Tech delivers complete food delivery solutions—from customer ordering to delivery partner workflows and admin dashboards—built with performance, security, and scale in mind.",
+          "Sunberry delivers complete food delivery solutions—from customer ordering to delivery partner workflows and admin dashboards—built with performance, security, and scale in mind.",
       },
       {
         key: "benefits",
@@ -1282,7 +1282,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
       },
       {
         key: "whyChoose",
-        eyebrow: "Why Choose TYL Tech?",
+        eyebrow: "Why Choose Sunberry?",
         title: "A Food-Tech Partner Focused on Performance and Results",
         points: [
           "Strict NDAs to protect your app idea and data",
@@ -1317,7 +1317,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Overview",
         title: "Transform Healthcare & Fitness Through Smart Digital Solutions",
         description:
-          "At TYL Tech, we build intelligent, secure, and scalable healthcare and fitness applications that empower healthcare professionals, hospitals, wellness brands, and startups to deliver exceptional user experiences. Our fitness app solutions inspire users to stay active, track progress, and achieve wellness goals with research-driven, performance-focused builds.",
+          "At Sunberry, we build intelligent, secure, and scalable healthcare and fitness applications that empower healthcare professionals, hospitals, wellness brands, and startups to deliver exceptional user experiences. Our fitness app solutions inspire users to stay active, track progress, and achieve wellness goals with research-driven, performance-focused builds.",
         points: [
           "Secure, scalable apps built for Android & iOS",
           "Engaging fitness experiences that boost retention",
@@ -1329,7 +1329,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Our Methodology",
         title: "A Proven Delivery Process — From Concept to Deployment",
         description:
-          "TYL Tech specializes in creating exceptional user experiences through innovative mobile and web application development. We collaborate closely with healthcare providers, fitness brands, startups, and organizations to conceptualize, design, and promote impactful digital products.",
+          "Sunberry specializes in creating exceptional user experiences through innovative mobile and web application development. We collaborate closely with healthcare providers, fitness brands, startups, and organizations to conceptualize, design, and promote impactful digital products.",
         points: [
           "Discovery workshops aligned to user needs & workflows",
           "UI/UX design for clarity, accessibility, and engagement",
@@ -1342,7 +1342,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Welcome to Our Company",
         title: "Transforming Healthcare & Fitness with Smart App Solutions",
         description:
-          "Welcome to TYL Tech, where innovation and technology come together to build a healthier, smarter future. We deliver secure, scalable, and user-friendly applications that simplify healthcare management, improve accessibility, and enhance engagement across wellness journeys.",
+          "Welcome to Sunberry, where innovation and technology come together to build a healthier, smarter future. We deliver secure, scalable, and user-friendly applications that simplify healthcare management, improve accessibility, and enhance engagement across wellness journeys.",
         points: [
           "Healthcare management experiences that improve accessibility",
           "Fitness journeys powered by intuitive tracking and insights",
@@ -1378,7 +1378,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Healthcare & Fitness App Development Company",
         title: "High-Performance Platforms for Health and Wellness",
         description:
-          "TYL Tech specializes in building high-performance digital solutions for healthcare and wellness. From telemedicine and remote patient monitoring to fitness tracking and wellness management platforms, we transform your vision into intelligent digital products that promote healthier, more connected communities.",
+          "Sunberry specializes in building high-performance digital solutions for healthcare and wellness. From telemedicine and remote patient monitoring to fitness tracking and wellness management platforms, we transform your vision into intelligent digital products that promote healthier, more connected communities.",
       },
       {
         key: "benefits",
@@ -1395,7 +1395,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
       },
       {
         key: "whyChoose",
-        eyebrow: "Why Choose TYL Tech?",
+        eyebrow: "Why Choose Sunberry?",
         title: "A Trusted Partner for Digital Health Innovation",
         points: [
           "Strict NDAs to ensure complete confidentiality",
@@ -1430,7 +1430,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Overview",
         title: "Future-Ready Laundry Apps Built for Growth",
         description:
-          "TYL Tech delivers custom-built laundry app solutions that automate operations, improve convenience, and help laundry businesses scale faster. We streamline every stage—from pickup scheduling to delivery tracking and payment processing—through secure, reliable, high-performance applications.",
+          "Sunberry delivers custom-built laundry app solutions that automate operations, improve convenience, and help laundry businesses scale faster. We streamline every stage—from pickup scheduling to delivery tracking and payment processing—through secure, reliable, high-performance applications.",
         points: [
           "End-to-end laundry workflow digitization",
           "Real-time tracking and status updates",
@@ -1491,7 +1491,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Laundry App Development Company",
         title: "On-Demand Laundry Apps That Improve Efficiency and Retention",
         description:
-          "TYL Tech builds user-friendly on-demand laundry solutions with order scheduling, tracking, secure payments, and delivery management—helping you increase satisfaction and repeat usage while optimizing internal operations.",
+          "Sunberry builds user-friendly on-demand laundry solutions with order scheduling, tracking, secure payments, and delivery management—helping you increase satisfaction and repeat usage while optimizing internal operations.",
       },
       {
         key: "benefits",
@@ -1509,7 +1509,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
       },
       {
         key: "whyChoose",
-        eyebrow: "Why Choose TYL Tech?",
+        eyebrow: "Why Choose Sunberry?",
         title: "A Trusted Technology Partner for Laundry Businesses",
         points: [
           "Strict NDA for complete privacy",
@@ -1544,7 +1544,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Overview",
         title: "Where Storytelling Meets High-Performance Technology",
         description:
-          "TYL Tech builds media applications that are intuitive, visually captivating, and optimized for smooth performance. Whether you’re launching streaming, music, OTT, or interactive entertainment, we create products that keep users engaged and returning.",
+          "Sunberry builds media applications that are intuitive, visually captivating, and optimized for smooth performance. Whether you’re launching streaming, music, OTT, or interactive entertainment, we create products that keep users engaged and returning.",
         points: [
           "Fast, interactive experiences designed for retention",
           "Scalable architecture for growing audiences",
@@ -1605,7 +1605,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Media & Entertainment App Development Company",
         title: "High-Performance Platforms Built for Streaming and Engagement",
         description:
-          "TYL Tech delivers high-performance platforms for media brands—covering UI design, backend development, streaming optimization, and post-launch support. We build custom solutions for video, music, OTT, live streaming, and interactive experiences aligned to your brand identity.",
+          "Sunberry delivers high-performance platforms for media brands—covering UI design, backend development, streaming optimization, and post-launch support. We build custom solutions for video, music, OTT, live streaming, and interactive experiences aligned to your brand identity.",
       },
       {
         key: "benefits",
@@ -1622,7 +1622,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
       },
       {
         key: "whyChoose",
-        eyebrow: "Why Choose TYL Tech?",
+        eyebrow: "Why Choose Sunberry?",
         title: "A Trusted Partner for Media Platform Development",
         points: [
           "Creative + technical execution focused on engagement",
@@ -1657,7 +1657,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Overview",
         title: "Build Smarter Real Estate Experiences with Future-Ready Platforms",
         description:
-          "TYL Tech delivers reliable real estate app development services that help property businesses build smart, user-friendly platforms tailored to operations and client engagement. We focus on scalable, secure, high-performing applications that streamline workflows, enhance customer experience, and support measurable growth in today’s digital real estate landscape.",
+          "Sunberry delivers reliable real estate app development services that help property businesses build smart, user-friendly platforms tailored to operations and client engagement. We focus on scalable, secure, high-performing applications that streamline workflows, enhance customer experience, and support measurable growth in today’s digital real estate landscape.",
         points: [
           "User-friendly experiences for buyers, sellers, and agents",
           "High-performance apps designed for large listings and traffic",
@@ -1669,7 +1669,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Our Methodology",
         title: "A Proven Delivery Approach — From Concept to Launch",
         description:
-          "TYL Tech is a leading Real Estate Marketplace development company in Hyderabad, specializing in enhancing user experiences through modern mobile and web applications. We collaborate closely to conceptualize, develop, and promote real estate platforms that connect you with the right audience and accelerate adoption.",
+          "Sunberry is a leading Real Estate Marketplace development company in Hyderabad, specializing in enhancing user experiences through modern mobile and web applications. We collaborate closely to conceptualize, develop, and promote real estate platforms that connect you with the right audience and accelerate adoption.",
         points: [
           "Discovery workshops and roadmap planning",
           "UI/UX design focused on conversion and usability",
@@ -1735,7 +1735,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
       },
       {
         key: "whyChoose",
-        eyebrow: "Why Choose TYL Tech?",
+        eyebrow: "Why Choose Sunberry?",
         title: "A Growth-Focused Partner for Real Estate Digital Transformation",
         points: [
           "Real-estate domain understanding across listings, leads, and workflows",
@@ -1770,7 +1770,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Overview",
         title: "Build Dynamic Social Platforms That Engage and Grow Communities",
         description:
-          "TYL Tech is a leading social media app development company dedicated to building scalable, engaging platforms that connect communities and boost user interaction. Beyond development, we also support growth through strategic social media marketing services to help your platform attract and retain users.",
+          "Sunberry is a leading social media app development company dedicated to building scalable, engaging platforms that connect communities and boost user interaction. Beyond development, we also support growth through strategic social media marketing services to help your platform attract and retain users.",
         points: [
           "Engagement-first experiences built for retention",
           "Scalable systems for growing audiences and content",
@@ -1848,7 +1848,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
       },
       {
         key: "whyChoose",
-        eyebrow: "Why Choose TYL Tech?",
+        eyebrow: "Why Choose Sunberry?",
         title: "A Reliable Partner for Secure, Scalable Social Experiences",
         points: [
           "End-to-end delivery: design, development, deployment, and maintenance",
@@ -1883,7 +1883,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Overview",
         title: "Smarter CRM Solutions Built for Real Business Growth",
         description:
-          "TYL Tech is a leading CRM software development company focused on building powerful, user-friendly CRM solutions for businesses of all sizes. From fast-growing startups to established enterprises, our CRM solutions for small and mid-scale businesses are designed to streamline operations, strengthen customer relationships, and accelerate sales growth.",
+          "Sunberry is a leading CRM software development company focused on building powerful, user-friendly CRM solutions for businesses of all sizes. From fast-growing startups to established enterprises, our CRM solutions for small and mid-scale businesses are designed to streamline operations, strengthen customer relationships, and accelerate sales growth.",
         points: [
           "User-friendly CRM tailored to your workflows",
           "Automation + CRM marketing capabilities for better engagement",
@@ -1895,7 +1895,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Our Methodology",
         title: "A Proven Delivery Process — From Concept to Deployment",
         description:
-          "TYL Tech is a leading CRM development company in Hyderabad, specializing in building high-impact CRM solutions and intuitive mobile and web applications. We focus on creating seamless user experiences through thoughtful design and robust engineering.",
+          "Sunberry is a leading CRM development company in Hyderabad, specializing in building high-impact CRM solutions and intuitive mobile and web applications. We focus on creating seamless user experiences through thoughtful design and robust engineering.",
         points: [
           "Requirement discovery with measurable milestones",
           "UI/UX aligned to sales, support, and marketing workflows",
@@ -1908,7 +1908,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Welcome to Our Company",
         title: "Manage Customers Efficiently with a Modern CRM",
         description:
-          "At TYL Tech, we are a trusted CRM software development company focused on building intelligent, scalable, and business-ready CRM solutions. Our goal is to help organizations strengthen customer relationships, streamline operations, and improve productivity through well-designed CRM platforms.",
+          "At Sunberry, we are a trusted CRM software development company focused on building intelligent, scalable, and business-ready CRM solutions. Our goal is to help organizations strengthen customer relationships, streamline operations, and improve productivity through well-designed CRM platforms.",
         points: [
           "Flexible CRM for small and mid-sized businesses",
           "Lead tracking, campaign automation, and segmentation",
@@ -1932,7 +1932,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Start Work With Us",
         title: "Let’s Build CRM for Small Business Success Together",
         description:
-          "Partner with TYL Tech to build intelligent, scalable, custom CRM solutions that support real business growth. We design platforms that improve visibility across sales, marketing, and customer engagement—built to perform today and scale confidently for tomorrow.",
+          "Partner with Sunberry to build intelligent, scalable, custom CRM solutions that support real business growth. We design platforms that improve visibility across sales, marketing, and customer engagement—built to perform today and scale confidently for tomorrow.",
         points: [
           "Sales + support + marketing in one platform",
           "Data-driven campaigns and personalized journeys",
@@ -1944,7 +1944,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "CRM Software Development Company",
         title: "A Business-Ready CRM That Fits Your Operations",
         description:
-          "TYL Tech specializes in building powerful, user-friendly, and scalable CRM solutions tailored to your business needs. Whether you need a custom CRM for a small business or an advanced CRM management system for large-scale operations, we deliver high-performance solutions that boost efficiency and strengthen long-term customer relationships.",
+          "Sunberry specializes in building powerful, user-friendly, and scalable CRM solutions tailored to your business needs. Whether you need a custom CRM for a small business or an advanced CRM management system for large-scale operations, we deliver high-performance solutions that boost efficiency and strengthen long-term customer relationships.",
       },
       {
         key: "benefits",
@@ -1961,7 +1961,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
       },
       {
         key: "whyChoose",
-        eyebrow: "Why Choose TYL Tech?",
+        eyebrow: "Why Choose Sunberry?",
         title: "A Trusted Partner for Scalable CRM Success",
         points: [
           "CRM aligned with real-world workflows and goals",
@@ -1995,7 +1995,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Overview",
         title: "Transform Learning Experiences Through Smart Technology",
         description:
-          "At TYL Tech, we build intuitive, scalable, and engaging digital learning solutions for schools, universities, training institutes, and corporate learning platforms. We develop custom eLearning platforms, LMS solutions, virtual classrooms, and interactive learning tools designed to make education more accessible, efficient, and future-ready.",
+          "At Sunberry, we build intuitive, scalable, and engaging digital learning solutions for schools, universities, training institutes, and corporate learning platforms. We develop custom eLearning platforms, LMS solutions, virtual classrooms, and interactive learning tools designed to make education more accessible, efficient, and future-ready.",
         points: [
           "Learner-first experiences with educator-friendly tools",
           "Scalable delivery across mobile and web",
@@ -2007,7 +2007,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Our Methodology",
         title: "A Proven Delivery Process — From Concept to Deployment",
         description:
-          "TYL Tech is a leading education app development company in Hyderabad, specializing in designing and developing high-quality mobile and web applications with a strong focus on user experience. We collaborate closely to conceptualize, build, and scale digital products that deliver measurable impact.",
+          "Sunberry is a leading education app development company in Hyderabad, specializing in designing and developing high-quality mobile and web applications with a strong focus on user experience. We collaborate closely to conceptualize, build, and scale digital products that deliver measurable impact.",
         points: [
           "Discovery aligned to curriculum, roles, and outcomes",
           "UI/UX for learners, instructors, and administrators",
@@ -2044,7 +2044,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Start Work With Us",
         title: "Build the Future of Learning, Together",
         description:
-          "Start working with TYL Tech to transform your education model into an interactive, technology-driven experience. We deliver thoughtful design, secure architecture, and scalable functionality—supporting growth at every stage.",
+          "Start working with Sunberry to transform your education model into an interactive, technology-driven experience. We deliver thoughtful design, secure architecture, and scalable functionality—supporting growth at every stage.",
         points: [
           "Custom LMS and eLearning builds aligned to your model",
           "Accessible, intuitive experience for every user type",
@@ -2056,7 +2056,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Education App Development Company",
         title: "Custom eLearning and LMS Platforms Built to Scale",
         description:
-          "As a leading education app development company, TYL Tech transforms learning concepts into innovative, scalable, and user-centric digital platforms. From strategy and UI/UX to development, integration, deployment, and ongoing support—we deliver seamless learning experiences across devices.",
+          "As a leading education app development company, Sunberry transforms learning concepts into innovative, scalable, and user-centric digital platforms. From strategy and UI/UX to development, integration, deployment, and ongoing support—we deliver seamless learning experiences across devices.",
       },
       {
         key: "benefits",
@@ -2073,7 +2073,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
       },
       {
         key: "whyChoose",
-        eyebrow: "Why Choose TYL Tech?",
+        eyebrow: "Why Choose Sunberry?",
         title: "A Reliable Partner for Future-Ready Learning Platforms",
         points: [
           "Strict NDA and confidentiality for content and IP",
@@ -2107,7 +2107,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "About Our Company",
         title: "GPS Vehicle Tracking System in Hyderabad",
         description:
-          "At TYL Tech, we specialize in GPS vehicle tracking systems in Hyderabad, delivering advanced solutions that enhance fleet management, improve safety, and boost operational efficiency. Our cutting-edge tracking services provide real-time monitoring and precise control—helping businesses operate smarter and stay ahead.",
+          "At Sunberry, we specialize in GPS vehicle tracking systems in Hyderabad, delivering advanced solutions that enhance fleet management, improve safety, and boost operational efficiency. Our cutting-edge tracking services provide real-time monitoring and precise control—helping businesses operate smarter and stay ahead.",
         points: [
           "Real-time tracking with high-precision location insights",
           "Fleet safety and operational visibility",
@@ -2119,7 +2119,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "What is GPS Vehicle Tracking?",
         title: "Real-Time Monitoring Powered by Satellite Signals",
         description:
-          "GPS Vehicle Tracking enables real-time monitoring of a vehicle’s location and movement using satellite signals. TYL Tech systems support live tracking, historical route analysis, and detailed reporting—ensuring accurate insights, enhanced security, and efficient fleet management.",
+          "GPS Vehicle Tracking enables real-time monitoring of a vehicle’s location and movement using satellite signals. Sunberry systems support live tracking, historical route analysis, and detailed reporting—ensuring accurate insights, enhanced security, and efficient fleet management.",
         points: [
           "Live tracking + route history analytics",
           "Detailed reporting for operations and compliance",
@@ -2131,7 +2131,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Work With Us",
         title: "Build Smart Tracking Systems Tailored to Your Fleet",
         description:
-          "At TYL Tech, we design state-of-the-art GPS tracking systems tailored for businesses of all sizes. By integrating advanced IoT and geolocation technologies, we deliver high-precision tracking with unmatched reliability—ensuring seamless monitoring and complete control of your vehicles.",
+          "At Sunberry, we design state-of-the-art GPS tracking systems tailored for businesses of all sizes. By integrating advanced IoT and geolocation technologies, we deliver high-precision tracking with unmatched reliability—ensuring seamless monitoring and complete control of your vehicles.",
         points: [
           "Custom solutions for fleet size and use-cases",
           "Reliable IoT + geolocation integrations",
@@ -2143,7 +2143,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Start Working With Us",
         title: "Leading GPS Tracking Service Providers",
         description:
-          "Start with TYL Tech to implement future-ready tracking that improves control, visibility, and fleet efficiency. We align technology with your operational goals to deliver measurable outcomes.",
+          "Start with Sunberry to implement future-ready tracking that improves control, visibility, and fleet efficiency. We align technology with your operational goals to deliver measurable outcomes.",
         points: [
           "Fast rollout with clear operational alignment",
           "Scalable setup for expanding fleets",
@@ -2155,14 +2155,14 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "GIS & Advanced Monitoring",
         title: "GIS Mapping and Aerial Monitoring Options",
         description:
-          "TYL Tech also provides GIS mapping services to visualize fleet locations and optimize routes with customized mapping solutions. For advanced surveillance and remote visibility, we offer real-time aerial monitoring with drones integrated with GPS technology to deliver high-resolution live feeds across large or hard-to-reach areas.",
+          "Sunberry also provides GIS mapping services to visualize fleet locations and optimize routes with customized mapping solutions. For advanced surveillance and remote visibility, we offer real-time aerial monitoring with drones integrated with GPS technology to deliver high-resolution live feeds across large or hard-to-reach areas.",
       },
       {
         key: "whyChoose",
         eyebrow: "Collaboration With",
         title: "Professional Partnerships That Deliver Excellence",
         description:
-          "Our partnership approach guarantees top-tier products and services, supported by combined expertise and reputation. Count on TYL Tech to deliver innovative solutions that meet and exceed expectations.",
+          "Our partnership approach guarantees top-tier products and services, supported by combined expertise and reputation. Count on Sunberry to deliver innovative solutions that meet and exceed expectations.",
       },
     ],
     heroImage: {
@@ -2188,7 +2188,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Hotel Booking App & Website",
         title: "Hotel Booking Apps Built for Speed, Convenience, and Growth",
         description:
-          "TYL Tech is a leading hotel booking app development company, delivering custom, user-friendly applications for seamless hotel search, booking, and guest management. Our solutions help businesses of all sizes stay competitive in the hospitality industry by providing secure, scalable, and efficient platforms tailored to your unique requirements.",
+          "Sunberry is a leading hotel booking app development company, delivering custom, user-friendly applications for seamless hotel search, booking, and guest management. Our solutions help businesses of all sizes stay competitive in the hospitality industry by providing secure, scalable, and efficient platforms tailored to your unique requirements.",
         points: [
           "User-friendly booking journeys that reduce drop-offs",
           "Secure and scalable architecture for peak traffic",
@@ -2200,7 +2200,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "A Proven Methodology",
         title: "From Strategy to Deployment With Clear Delivery Milestones",
         description:
-          "TYL Tech is a leading hotel booking app and website development company in Hyderabad, specializing in designing and developing mobile and web applications that enhance user experience. We help businesses expand their reach and connect with the right audience by collaborating closely with organizations to conceptualize, develop, and promote digital products tailored to their goals.",
+          "Sunberry is a leading hotel booking app and website development company in Hyderabad, specializing in designing and developing mobile and web applications that enhance user experience. We help businesses expand their reach and connect with the right audience by collaborating closely with organizations to conceptualize, develop, and promote digital products tailored to their goals.",
         points: [
           "Discovery + planning aligned to your property goals",
           "UI/UX + development focused on conversion",
@@ -2212,7 +2212,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Welcome To Our Company",
         title: "Simplifying Hospitality with Hotel Booking App Development",
         description:
-          "Welcome to TYL Tech—your trusted partner for custom hotel booking app development services. We build user-centric, high-performance hotel reservation apps that combine convenience for guests with powerful management tools for hotel owners. From real-time availability and secure payment gateways to multi-language support, GPS-based search, in-app chat, and push notifications, we customize every app to match your brand and business objectives. Whether you’re building a standalone app or integrating with your existing PMS, we have the expertise to bring your vision to life.",
+          "Welcome to Sunberry—your trusted partner for custom hotel booking app development services. We build user-centric, high-performance hotel reservation apps that combine convenience for guests with powerful management tools for hotel owners. From real-time availability and secure payment gateways to multi-language support, GPS-based search, in-app chat, and push notifications, we customize every app to match your brand and business objectives. Whether you’re building a standalone app or integrating with your existing PMS, we have the expertise to bring your vision to life.",
         points: [
           "Android + iOS apps with modern cross-platform tech",
           "Guest-first UX with smart discovery and booking flow",
@@ -2224,7 +2224,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Work With Us",
         title: "Exceptional Hotel Booking Apps That Engage Guests",
         description:
-          "TYL Tech develops innovative, user-friendly, and feature-rich hotel booking apps for the hospitality industry. Leveraging frameworks like React Native and Flutter, we build cross-platform apps that enhance online presence, attract more customers, and deliver a seamless digital experience—from reservations and digital check-ins to payments, loyalty programs, notifications, and personalized offers.",
+          "Sunberry develops innovative, user-friendly, and feature-rich hotel booking apps for the hospitality industry. Leveraging frameworks like React Native and Flutter, we build cross-platform apps that enhance online presence, attract more customers, and deliver a seamless digital experience—from reservations and digital check-ins to payments, loyalty programs, notifications, and personalized offers.",
         points: [
           "Cross-platform apps optimized for performance",
           "Guest engagement via offers, loyalty, and messaging",
@@ -2260,10 +2260,10 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
       },
       {
         key: "whyChoose",
-        eyebrow: "Why Choose TYL Tech?",
+        eyebrow: "Why Choose Sunberry?",
         title: "Secure, Scalable Hospitality Platforms With Long-Term Support",
         description:
-          "TYL Tech follows strict NDAs, delivers cost-effective solutions, and provides a dedicated expert team. We build reliable, user-friendly platforms optimized for high user loads, with ongoing support and custom solutions aligned to your brand and business objectives.",
+          "Sunberry follows strict NDAs, delivers cost-effective solutions, and provides a dedicated expert team. We build reliable, user-friendly platforms optimized for high user loads, with ongoing support and custom solutions aligned to your brand and business objectives.",
         points: [
           "Strict NDA + privacy-first development",
           "Performance-ready architecture for high traffic",
@@ -2294,7 +2294,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Live Streaming App",
         title: "Build Video Streaming Platforms Like OTT Leaders",
         description:
-          "TYL Tech helps turn your vision into a secure, scalable streaming app. We specialize in live streaming platforms, OTT applications, and on-demand video solutions built for performance and growth—covering platform architecture, development, launch, and post-release optimization.",
+          "Sunberry helps turn your vision into a secure, scalable streaming app. We specialize in live streaming platforms, OTT applications, and on-demand video solutions built for performance and growth—covering platform architecture, development, launch, and post-release optimization.",
         points: [
           "Smooth playback with modern streaming architecture",
           "Scalable systems for growing audiences",
@@ -2306,7 +2306,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "A Proven Methodology",
         title: "High-Performance Streaming Apps With UX-First Engineering",
         description:
-          "TYL Tech is a leading live streaming app development company in Hyderabad, designing high-performance mobile and web applications with a strong focus on user experience. We collaborate with organizations to conceptualize, build, and scale live streaming platforms that support engagement, growth, and long-term success.",
+          "Sunberry is a leading live streaming app development company in Hyderabad, designing high-performance mobile and web applications with a strong focus on user experience. We collaborate with organizations to conceptualize, build, and scale live streaming platforms that support engagement, growth, and long-term success.",
         points: [
           "Product discovery + platform blueprinting",
           "Secure streaming pipeline + robust backend",
@@ -2351,7 +2351,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
       },
       {
         key: "whyChoose",
-        eyebrow: "Why Choose TYL Tech?",
+        eyebrow: "Why Choose Sunberry?",
         title: "Secure, Scalable Streaming With Ongoing Support",
         description:
           "We prioritize confidentiality with strict NDAs, deliver cost-effective development, and build cloud-native architectures for speed and scale. Our UX-focused design and secure streaming pipeline help you launch a platform that performs reliably and grows confidently.",
@@ -2385,7 +2385,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "News App",
         title: "Modern News Apps Built for Speed, Engagement, and Scale",
         description:
-          "TYL Tech specializes in building powerful, user-centric news applications for digital publishers, media startups, and established news brands. We create secure, scalable, visually compelling apps that drive engagement and expand readership across devices.",
+          "Sunberry specializes in building powerful, user-centric news applications for digital publishers, media startups, and established news brands. We create secure, scalable, visually compelling apps that drive engagement and expand readership across devices.",
         points: [
           "High-performance content delivery across devices",
           "Reader-first UX that boosts session time",
@@ -2397,7 +2397,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "A Proven Methodology",
         title: "Performance-Driven News Platforms With Strong UI/UX",
         description:
-          "TYL Tech is a leading News App Development Company in Hyderabad, building intuitive, scalable, and engaging news applications. We collaborate with publishers and organizations to conceptualize, design, and promote digital products that drive readership and long-term growth.",
+          "Sunberry is a leading News App Development Company in Hyderabad, building intuitive, scalable, and engaging news applications. We collaborate with publishers and organizations to conceptualize, design, and promote digital products that drive readership and long-term growth.",
         points: [
           "Clear information architecture for fast discovery",
           "Secure backend + scalable feed delivery",
@@ -2409,7 +2409,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Welcome To Our Company",
         title: "News & Magazine Apps That Amplify Storytelling",
         description:
-          "TYL Tech builds intelligent, high-performance apps for newspapers and magazines with features like push notifications, offline reading, dynamic layouts, multimedia support, and personalized content feeds—tailored to your brand identity and audience behavior.",
+          "Sunberry builds intelligent, high-performance apps for newspapers and magazines with features like push notifications, offline reading, dynamic layouts, multimedia support, and personalized content feeds—tailored to your brand identity and audience behavior.",
         points: [
           "Personalized feeds and category-based discovery",
           "Offline reading for uninterrupted experience",
@@ -2433,7 +2433,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Start Work With Us",
         title: "Custom News Apps and Aggregators Built Around Your Strategy",
         description:
-          "Start with TYL Tech to build feature-rich platforms for real-time news delivery. We also build news feed aggregator apps to unify content sources into a single, organized feed—tailored to your audience preferences and content strategy.",
+          "Start with Sunberry to build feature-rich platforms for real-time news delivery. We also build news feed aggregator apps to unify content sources into a single, organized feed—tailored to your audience preferences and content strategy.",
         points: [
           "Custom UX aligned to your editorial approach",
           "Secure, future-ready backend systems",
@@ -2478,7 +2478,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "SaaS And PaaS",
         title: "Build Cloud Platforms That Are Simple, Stable, and Scalable",
         description:
-          "TYL Tech delivers SaaS and PaaS development services that help businesses create reliable cloud platforms without unnecessary complexity. We design systems that are easy to manage, flexible to scale, and secure by design—backed by transparent processes and meaningful collaboration.",
+          "Sunberry delivers SaaS and PaaS development services that help businesses create reliable cloud platforms without unnecessary complexity. We design systems that are easy to manage, flexible to scale, and secure by design—backed by transparent processes and meaningful collaboration.",
         points: [
           "Cloud platforms designed for real business needs",
           "Secure-by-design architecture",
@@ -2490,7 +2490,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "A Proven Methodology",
         title: "High-Performance SaaS/PaaS Platforms With UX-First Delivery",
         description:
-          "TYL Tech is a leading SaaS and PaaS development company in Hyderabad, designing and developing mobile and web applications that deliver exceptional user experiences. We collaborate with organizations to build and scale cloud-based solutions that drive growth and efficiency.",
+          "Sunberry is a leading SaaS and PaaS development company in Hyderabad, designing and developing mobile and web applications that deliver exceptional user experiences. We collaborate with organizations to build and scale cloud-based solutions that drive growth and efficiency.",
         points: [
           "Architecture planning for performance and scale",
           "Iterative delivery with predictable milestones",
@@ -2502,7 +2502,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Welcome To Our Company",
         title: "Transforming Ideas into Scalable Cloud Platforms",
         description:
-          "TYL Tech helps businesses build secure, flexible, and future-ready SaaS and PaaS platforms. Whether launching a new cloud product or modernizing an existing system, we tailor every platform to your goals and ensure it’s ready to evolve as your business grows.",
+          "Sunberry helps businesses build secure, flexible, and future-ready SaaS and PaaS platforms. Whether launching a new cloud product or modernizing an existing system, we tailor every platform to your goals and ensure it’s ready to evolve as your business grows.",
         points: [
           "Modern SaaS products and robust PaaS environments",
           "Intuitive UX paired with thoughtful architecture",
@@ -2550,10 +2550,10 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
       },
       {
         key: "whyChoose",
-        eyebrow: "Why Choose TYL Tech Solutions?",
+        eyebrow: "Why Choose Sunberry Solutions?",
         title: "Secure Architectures and Continuous Support for Lasting Success",
         description:
-          "TYL Tech delivers tailored architectures, an expert development team, transparent communication, secure enterprise-grade infrastructure, and continuous improvement beyond deployment to ensure lasting performance and scalability.",
+          "Sunberry delivers tailored architectures, an expert development team, transparent communication, secure enterprise-grade infrastructure, and continuous improvement beyond deployment to ensure lasting performance and scalability.",
         points: [
           "Multi-tenant setups with robust security",
           "Predictable delivery with transparent collaboration",
@@ -2584,7 +2584,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Taxi Booking App",
         title: "High-Performing Taxi Booking Apps Built for Modern Mobility",
         description:
-          "TYL Tech specializes in taxi booking app development, delivering high-performing, scalable solutions for businesses in the transportation industry. We provide end-to-end services from concept to launch, whether you need a robust taxi services app or a fully customized ride-hailing platform.",
+          "Sunberry specializes in taxi booking app development, delivering high-performing, scalable solutions for businesses in the transportation industry. We provide end-to-end services from concept to launch, whether you need a robust taxi services app or a fully customized ride-hailing platform.",
         points: [
           "End-to-end development from idea to launch",
           "Scalable solutions for startups and enterprises",
@@ -2596,7 +2596,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "A Proven Methodology",
         title: "Intuitive, Scalable Platforms Built for Growth",
         description:
-          "TYL Tech is a leading taxi booking app development company in Hyderabad, specializing in designing and developing mobile and web applications that deliver exceptional user experiences. We collaborate closely to conceptualize, build, and promote innovative taxi booking solutions.",
+          "Sunberry is a leading taxi booking app development company in Hyderabad, specializing in designing and developing mobile and web applications that deliver exceptional user experiences. We collaborate closely to conceptualize, build, and promote innovative taxi booking solutions.",
         points: [
           "Clear planning for rider, driver, and admin flows",
           "Robust QA for real-time features and payments",
@@ -2620,7 +2620,7 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
         eyebrow: "Work With Us",
         title: "Best-in-Class Taxi Apps with Smart Features",
         description:
-          "TYL Tech builds smart, scalable platforms that solve real mobility problems. Whether launching a new taxi app or enhancing an existing system, we integrate real-time tracking, secure payments, and efficient fleet management to help you stay ahead.",
+          "Sunberry builds smart, scalable platforms that solve real mobility problems. Whether launching a new taxi app or enhancing an existing system, we integrate real-time tracking, secure payments, and efficient fleet management to help you stay ahead.",
         points: [
           "Fleet management + operational visibility",
           "Secure payments with modern integrations",
@@ -2658,10 +2658,10 @@ export const INDUSTRIES_DATA: Record<string, IndustryPageData> = {
       },
       {
         key: "whyChoose",
-        eyebrow: "Why Choose TYL Tech",
+        eyebrow: "Why Choose Sunberry",
         title: "Mobility Expertise + Scalable Delivery + Long-Term Support",
         description:
-          "Clients choose TYL Tech for flexible development, dedicated UI/UX and backend teams, custom scalable solutions, and post-launch support. We build taxi platforms that are reliable, high-performing, and ready to evolve with your market.",
+          "Clients choose Sunberry for flexible development, dedicated UI/UX and backend teams, custom scalable solutions, and post-launch support. We build taxi platforms that are reliable, high-performing, and ready to evolve with your market.",
         points: [
           "Custom solutions tailored to your business model",
           "Reliable architecture built for real-time operations",

@@ -131,7 +131,7 @@ function OrbitLogo() {
 
             <img
               src={logo}
-              alt="TYL Tech"
+              alt="Sunberry"
               className="h-16 w-auto object-contain"
               loading="lazy"
               draggable={false}

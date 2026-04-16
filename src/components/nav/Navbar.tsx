@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import type { MouseEvent } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
-import logo from "../../assets/SLOGO.svg";
+import logo from "../../assets/SLOGO .png";
 import NavLinks from "./NavLinks";
 import MobileMenu from "./MobileMenu";
 
@@ -33,7 +33,7 @@ const Navbar = () => {
     <header className="fixed left-0 top-0 z-50 w-full">
       {/* TOP STRIP */}
       <div className="border-b border-border bg-surface">
-        <div className="mx-auto flex h-30 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto flex h-15 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
           {/* Logo */}
           <Link
             to="/"
@@ -41,7 +41,7 @@ const Navbar = () => {
             className="flex items-center gap-3 text-heading"
             aria-label="SUNBERRY home"
           >
-            <img src={logo} alt="sunberry logo" className=" flex h-30  items-center w-auto object-contain" />
+            <img src={logo} alt="sunberry logo" className=" flex h-15  items-center w-auto object-contain" />
             <span className="sr-only">SUNBERRY</span>
           </Link>
 
@@ -74,7 +74,7 @@ const Navbar = () => {
               </span>
               <div className="leading-tight">
                 <div className="text-xs font-semibold text-muted">24×7 Support</div>
-                <div className="text-sm font-semibold text-heading">contact@tyltech.com</div>
+                <div className="text-sm font-semibold text-heading">contact@Sunberry.com</div>
               </div>
             </div>
           </div>

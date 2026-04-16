@@ -9,7 +9,7 @@ import {
   Phone,
   Youtube,
 } from "lucide-react";
-import logo from "../../assets/SLOGO.svg";
+import logo from "../../assets/SLOGO .png";
 
 const quickLinks = [
   { label: "About Us", to: "/about" },
@@ -35,7 +35,7 @@ export default function Footer() {
         <div className="absolute -right-24 bottom-0 h-80 w-80 rounded-full bg-[rgb(var(--color-accent-magenta))]/12 blur-3xl" />
 
         <div className="absolute inset-0 opacity-15">
-          <div className="h-full w-full bg-[linear-gradient(to_right,rgba(255,255,255,0.10)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.10)_1px,transparent_1px)] bg-[size:72px_72px]" />
+          <div className="h-full w-full bg-[linear-gradient(to_right,rgba(255,255,255,0.10)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.10)_1px,transparent_1px)] bg-size-[72px_72px]" />
         </div>
 
         <svg
@@ -65,7 +65,7 @@ export default function Footer() {
             <div className="flex items-center gap-3">
               <img
                 src={logo}
-                alt="TYL Tech"
+                alt="Sunberry"
                 className="h-12 w-auto rounded-xl bg-white/5 p-2"
                 draggable={false}
               />
@@ -135,10 +135,10 @@ export default function Footer() {
                   <Mail className="h-5 w-5 text-white/90" />
                 </span>
                 <a
-                  href="mailto:hello@tyltech.com"
+                  href="mailto:hello@Sunberry.com"
                   className="transition hover:text-white"
                 >
-                  hello@tyltech.com
+                  hello@Sunberry.com
                 </a>
               </div>
 
@@ -189,7 +189,7 @@ export default function Footer() {
 
       <div className="relative border-t border-white/10">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-6 py-5 text-xs text-white/65 sm:flex-row lg:px-10">
-          <p>© {new Date().getFullYear()} TYL Tech. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Sunberry. All rights reserved.</p>
 
           <div className="flex items-center gap-5">
             <button

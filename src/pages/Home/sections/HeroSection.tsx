@@ -103,11 +103,11 @@ const HeroSection = () => {
       {/* clean background (About-hero style) */}
       <div className="pointer-events-none absolute inset-0">
         {/* base gradient */}
-        <div className="absolute inset-0 bg-gradient-to-br from-white via-slate-50 to-indigo-50" />
+        <div className="absolute inset-0 bg-linear-to-br from-white via-slate-50 to-indigo-50" />
 
         {/* subtle grid */}
         <div className="absolute inset-0 opacity-40">
-          <div className="h-full w-full bg-[linear-gradient(to_right,rgba(15,23,42,0.06)_1px,transparent_1px),linear-gradient(to_bottom,rgba(15,23,42,0.06)_1px,transparent_1px)] bg-[size:56px_56px]" />
+          <div className="h-full w-full bg-[linear-gradient(to_right,rgba(15,23,42,0.06)_1px,transparent_1px),linear-gradient(to_bottom,rgba(15,23,42,0.06)_1px,transparent_1px)] bg-size-[56px_56px]" />
         </div>
 
         {/* soft accent blobs */}
@@ -137,7 +137,7 @@ const HeroSection = () => {
           </h1>
 
           <p className="mt-4 text-base leading-relaxed text-body sm:text-lg">
-            TYL-Tech delivers end-to-end technology solutions including application development, UI/UX
+            Sunberry delivers end-to-end technology solutions including application development, UI/UX
             design, analytics, digital marketing, and learning platforms—built to scale, perform, and
             evolve with your business.
           </p>
@@ -222,13 +222,13 @@ const HeroSection = () => {
               className="relative"
             >
               {/* outer glow */}
-              <div className="absolute -inset-2 rounded-card bg-gradient-to-br from-[rgb(var(--color-accent-purple))]/25 via-[rgb(var(--color-accent-cyan))]/20 to-[rgb(var(--color-accent-magenta))]/25 blur-2xl" />
+              <div className="absolute -inset-2 rounded-card bg-linear-to-br from-[rgb(var(--color-accent-purple))]/25 via-[rgb(var(--color-accent-cyan))]/20 to-[rgb(var(--color-accent-magenta))]/25 blur-2xl" />
 
               <div className="relative rounded-card border border-border bg-white/80 p-4 shadow-card backdrop-blur">
                 {/* slider window */}
                 <div className="overflow-hidden rounded-card bg-slate-950">
                   <div
-                    className="flex h-80 w-full transition-transform duration-1000 ease-in-out sm:h-96 lg:h-[560px]"
+                    className="flex h-80 w-full transition-transform duration-1000 ease-in-out sm:h-96 lg:h-140"
                     style={{ transform: `translateX(-${activeIndex * 100}%)` }}
                   >
                     {previews.map((image) => (
@@ -245,7 +245,7 @@ const HeroSection = () => {
 
                 {/* bottom row: vibrant pill + carousel dots */}
                 <div className="mt-4 flex items-center justify-between">
-                  <div className="inline-flex items-center gap-2 rounded-full border border-border bg-gradient-to-r from-[rgb(var(--color-accent-purple))]/15 via-[rgb(var(--color-accent-cyan))]/10 to-[rgb(var(--color-accent-magenta))]/15 px-4 py-2 text-xs font-semibold text-heading shadow-sm">
+                  <div className="inline-flex items-center gap-2 rounded-full border border-border bg-linear-to-r from-[rgb(var(--color-accent-purple))]/15 via-[rgb(var(--color-accent-cyan))]/10 to-[rgb(var(--color-accent-magenta))]/15 px-4 py-2 text-xs font-semibold text-heading shadow-sm">
                     <span className="h-2 w-2 rounded-full bg-[rgb(var(--color-accent-purple))]" />
                     Interactive
                   </div>
