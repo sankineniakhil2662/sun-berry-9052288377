@@ -1,5 +1,4 @@
 import type { LucideIcon } from "lucide-react";
-
 import {
   Monitor,
   Globe,
@@ -10,6 +9,9 @@ import {
   ShieldCheck,
   Palette,
 } from "lucide-react";
+
+import Heropic from "../../../../assets/services/webdevelopment/Heropic.png";
+import WhyChooseUsImage from "../../../../assets/services/webdevelopment/webWhy.png";
 
 type WebDevServiceItem = {
   title: string;
@@ -26,12 +28,11 @@ export const webDevelopmentData = {
     description:
       "We can deliver multiple project types such as customer-facing web apps, internal management portals, and e-commerce platforms. Our approach focuses on great-looking websites with a smooth and transparent development process.",
     ctaLabel: "Learn More",
-    
     imageAlt: "Web development illustration",
-    
+    imageSrc: Heropic,
   },
 
-    services: {
+  services: {
     eyebrow: "Website Development Services",
     title: "Our Full-Range of Website\nDevelopment Services",
     subtitle:
@@ -73,7 +74,6 @@ export const webDevelopmentData = {
           "Enable your business with a user-friendly CMS that facilitates content management, updates, and optimisation by boosting efficiency and responsiveness.",
         icon: FileText,
       },
-
       {
         title: "Website Security Audits",
         description:
@@ -95,7 +95,7 @@ export const webDevelopmentData = {
     description:
       "We always test, update, and fine-tune our Website Development Services. The developers of our team are also devoted to a lifelong learning process, which will eventually come in handy as you will be able to use the latest technologies and innovations. Each step does the trick and ensures the seamlessness and efficiency of your entire process, from ideation to implementation and support.",
     imageAlt: "Website development illustration",
-    imageSrc: "/assets/services/web-development/why-choose-us.png",
+    imageSrc: WhyChooseUsImage,
     points: [
       "Precisely tailored to your requirements",
       "Easy-to-navigate and visually stunning",
@@ -105,6 +105,7 @@ export const webDevelopmentData = {
       "Ongoing maintenance and support",
     ],
   },
+
   preferredPartner: {
     eyebrow: "why choose us?",
     title: "Why Sunberry is the\nPreferred Web Development\nPartner?",

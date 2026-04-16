@@ -69,7 +69,7 @@ function OrbitLogo() {
   ];
 
   return (
-    <div className="relative mx-auto w-[300px] sm:w-[360px] lg:w-[420px]">
+    <div className="relative mx-auto w-75 sm:w-90 lg:w-105">
       <div className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute left-1/2 top-1/2 h-60 w-60 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[rgb(var(--color-accent-purple))]/10 blur-3xl" />
         <div className="absolute left-1/2 top-1/2 h-52 w-52 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[rgb(var(--color-accent-magenta))]/10 blur-3xl" />
@@ -132,7 +132,7 @@ function OrbitLogo() {
             <img
               src={logo}
               alt="Sunberry"
-              className="h-16 w-auto object-contain"
+              className="h-14 w-auto object-contain"
               loading="lazy"
               draggable={false}
             />
@@ -201,7 +201,7 @@ const WhyChooseUsSection = () => {
             className="mt-3 text-3xl font-semibold tracking-tight text-heading sm:text-4xl"
           >
             Why{" "}
-            <span className="bg-gradient-to-r from-[rgb(var(--color-accent-purple))] via-[rgb(var(--color-accent-magenta))] to-[rgb(var(--color-accent-cyan))] bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-[rgb(var(--color-accent-purple))] via-[rgb(var(--color-accent-magenta))] to-[rgb(var(--color-accent-cyan))] bg-clip-text text-transparent">
               Choose Us
             </span>
           </motion.h2>
