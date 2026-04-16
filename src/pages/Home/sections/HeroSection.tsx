@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { ArrowRight, Sparkles } from "lucide-react";
 
 import mobile from "../../../assets/images/home/mobile.png";
 import web from "../../../assets/images/home/web.png";
@@ -63,8 +64,6 @@ type FloatingBadge = {
   className: string;
 };
 
-const ease = [0.2, 0.8, 0.2, 1] as const;
-
 const HeroSection = () => {
   const previews = useMemo(() => [mobile, web, uiux, learn, Digital, Game], []);
   const [activeIndex, setActiveIndex] = useState(0);
@@ -120,38 +119,41 @@ const HeroSection = () => {
       <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-10">
         {/* LEFT CONTENT */}
         <motion.div
-          initial={{ opacity: 0, y: 14 }}
+          initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease }}
+          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           className="max-w-2xl"
         >
-          <span className="inline-flex items-center rounded-full border border-border bg-surface px-4 py-1 text-xs font-medium uppercase tracking-widest text-muted">
+          <div className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/80 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-muted backdrop-blur">
+            <Sparkles className="h-3.5 w-3.5 text-[rgb(var(--color-accent-magenta))]" />
             Digital Transformation
-          </span>
+          </div>
 
-          <h1 className="mt-5 text-4xl font-semibold leading-tight sm:text-5xl">
-            <span className="text-[rgb(var(--color-accent-purple))]">
-              Engineering Digital Excellence for
+          <h1 className="mt-6 text-4xl font-bold leading-[1.1] tracking-tight text-heading sm:text-5xl lg:text-6xl">
+            Engineering{" "}
+            <span className="bg-gradient-to-r from-[rgb(var(--color-accent-purple))] via-[rgb(var(--color-accent-magenta))] to-[rgb(var(--color-accent-cyan))] bg-clip-text text-transparent">
+              Digital Excellence
             </span>{" "}
-            <span className="text-[rgb(var(--color-accent-magenta))]">Modern Businesses.</span>
+            for Modern Businesses.
           </h1>
 
-          <p className="mt-4 text-base leading-relaxed text-body sm:text-lg">
+          <p className="mt-6 max-w-xl text-lg leading-8 text-muted">
             TYL-Tech delivers end-to-end technology solutions including application development, UI/UX
             design, analytics, digital marketing, and learning platforms—built to scale, perform, and
             evolve with your business.
           </p>
 
-          <div className="mt-8 flex flex-wrap items-center gap-4">
+          <div className="mt-10 flex flex-wrap items-center gap-4">
             <Link
               to="/contact"
-              className="rounded-button bg-brand px-6 py-3 text-sm font-semibold text-white shadow-card transition hover:bg-brandHover"
+              className="group inline-flex items-center gap-2 rounded-xl bg-brand px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white shadow-card transition hover:shadow-hover"
             >
               Get a Quote
+              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
             </Link>
             <Link
               to="/services"
-              className="rounded-button border border-border bg-surface px-6 py-3 text-sm font-semibold text-heading transition hover:border-brand hover:text-brand"
+              className="inline-flex items-center gap-2 rounded-xl border border-border bg-surface px-6 py-3 text-sm font-semibold uppercase tracking-wide text-heading transition hover:border-[rgb(var(--color-accent-purple))] hover:text-[rgb(var(--color-accent-purple))]"
             >
               Explore Services
             </Link>

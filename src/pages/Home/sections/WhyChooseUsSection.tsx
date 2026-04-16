@@ -181,28 +181,34 @@ const WhyChooseUsSection = () => {
   ];
 
   return (
-    <section className="w-full bg-surface py-12 md:py-16">
-      <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
+    <section className="w-full bg-surface/40 py-20">
+      <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <motion.header
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.2 }}
           variants={container}
-          className="text-center"
+          className="mx-auto max-w-3xl text-center"
         >
+          <motion.p
+            variants={itemUp}
+            className="text-xs font-semibold uppercase tracking-[0.2em] text-[rgb(var(--color-accent-magenta))]"
+          >
+            Why partner with us
+          </motion.p>
           <motion.h2
             variants={itemUp}
-            className="text-3xl font-semibold text-heading sm:text-4xl"
+            className="mt-3 text-3xl font-semibold tracking-tight text-heading sm:text-4xl"
           >
             Why{" "}
-            <span className="text-[rgb(var(--color-accent-magenta))]">
+            <span className="bg-gradient-to-r from-[rgb(var(--color-accent-purple))] via-[rgb(var(--color-accent-magenta))] to-[rgb(var(--color-accent-cyan))] bg-clip-text text-transparent">
               Choose Us
             </span>
           </motion.h2>
 
           <motion.p
             variants={itemUp}
-            className="mt-3 text-base text-muted md:text-lg"
+            className="mt-4 text-base leading-7 text-muted sm:text-lg"
           >
             Empowering your business with trusted solutions and proven expertise.
           </motion.p>

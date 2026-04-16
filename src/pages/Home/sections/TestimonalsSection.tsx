@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import { SectionHeader } from "../../../components/branding";
 
 const testimonials = [
   {
@@ -67,24 +68,22 @@ const TestimonialsSection = () => {
   }, []);
 
   return (
-    <section className="w-full bg-bg py-20 overflow-hidden">
-      <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-muted">
-            Testimonials
-          </p>
-          <div className="mt-2 flex items-center justify-center">
-            <h2 className="mt-3 text-3xl font-semibold text-heading sm:text-4xl">
-              Trusted by {" "}
-              <span className="text-[rgb(var(--color-accent-magenta))]">
+    <section className="w-full bg-surface/40 py-20 overflow-hidden">
+      <div className="mx-auto max-w-7xl px-6 lg:px-10">
+        <SectionHeader
+          eyebrow="Testimonials"
+          title={
+            <>
+              Trusted by{" "}
+              <span className="bg-gradient-to-r from-[rgb(var(--color-accent-purple))] via-[rgb(var(--color-accent-magenta))] to-[rgb(var(--color-accent-cyan))] bg-clip-text text-transparent">
                 growing teams
               </span>
-            </h2>
-          </div>
-          <p className="mt-3 text-base text-body">
-            What our clients say about working with TYL-Tech.
-          </p>
-        </div>
+            </>
+          }
+          subtitle="What our clients say about working with TYL-Tech."
+          align="center"
+          maxWidth="max-w-3xl"
+        />
       </div>
 
       <div

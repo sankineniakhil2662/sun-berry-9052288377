@@ -1,5 +1,5 @@
-import React from "react";
-import webWhy from "../../../../../assets/services/webdevelopment/webWhy.png";
+import { Check } from "lucide-react";
+import { ScrollReveal, SectionHeader } from "../../../../../components/branding";
 
 type WhyChooseUsData = {
   eyebrow: string;
@@ -10,67 +10,43 @@ type WhyChooseUsData = {
   points: string[];
 };
 
-const CheckIcon = () => (
-  <span className="flex h-7 w-7 items-center justify-center rounded-full bg-brand text-white">
-    <svg
-      viewBox="0 0 24 24"
-      className="h-4 w-4"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="3"
-      aria-hidden="true"
-    >
-      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-    </svg>
-  </span>
-);
-
 export default function WhyChooseUs({ data }: { data: WhyChooseUsData }) {
   return (
-    <section className="bg-bg">
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
-        <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-12">
-          {/* Left image */}
-          <div className="justify-self-center lg:justify-self-start">
-            <div className="overflow-hidden rounded-2xl border border-border bg-surface shadow-card">
-              <img
-                src={webWhy}
-                alt={data.imageAlt}
-                className="block w-full"
-                loading="lazy"
-              />
-            </div>
-          </div>
+    <section className="w-full bg-bg py-20">
+      <div className="mx-auto grid w-full max-w-7xl gap-12 px-6 lg:grid-cols-2 lg:gap-16 lg:px-10">
+        <div>
+          <SectionHeader
+            eyebrow={data.eyebrow}
+            title={<span className="whitespace-pre-line">{data.title}</span>}
+          />
+          <ScrollReveal delay={0.1}>
+            <p className="mt-6 text-base leading-7 text-body sm:text-lg">{data.description}</p>
+          </ScrollReveal>
+        </div>
 
-          {/* Right content (reduced size vs image) */}
-          <div className="max-w-lg">
-            <p className="text-lg font-medium tracking-wide text-brand">
-              {data.eyebrow}
-            </p>
-
-            <h2 className="mt-3 whitespace-pre-line text-2xl font-semibold leading-tight text-heading sm:text-3xl">
-              {data.title}
-            </h2>
-
-            <p className="mt-3 text-sm leading-relaxed text-muted">
-              {data.description}
-            </p>
-
-            <ul className="mt-6 space-y-3">
-              {data.points.map((point) => (
-                <li key={point} className="flex items-start gap-3">
-                  <span className="mt-0.5">
-                    <CheckIcon />
+        <ScrollReveal direction="left" delay={0.15}>
+          <div className="relative h-full rounded-3xl border border-border bg-surface p-8 shadow-card">
+            <div
+              aria-hidden
+              className="pointer-events-none absolute -top-8 -right-8 h-40 w-40 rounded-full bg-[rgb(var(--color-accent-purple))]/10 blur-3xl"
+            />
+            <div
+              aria-hidden
+              className="pointer-events-none absolute -bottom-8 -left-8 h-40 w-40 rounded-full bg-[rgb(var(--color-accent-magenta))]/10 blur-3xl"
+            />
+            <h3 className="relative text-lg font-semibold text-heading">What you can expect</h3>
+            <ul className="relative mt-5 space-y-3.5">
+              {data.points.map((p) => (
+                <li key={p} className="flex items-start gap-3">
+                  <span className="mt-0.5 flex h-7 w-7 flex-none items-center justify-center rounded-full bg-gradient-to-br from-[rgb(var(--color-accent-purple))] to-[rgb(var(--color-accent-magenta))] text-white">
+                    <Check className="h-4 w-4" />
                   </span>
-
-                  <p className="text-sm leading-relaxed text-heading/80">
-                    {point}
-                  </p>
+                  <span className="text-sm leading-6 text-body sm:text-base">{p}</span>
                 </li>
               ))}
             </ul>
           </div>
-        </div>
+        </ScrollReveal>
       </div>
     </section>
   );

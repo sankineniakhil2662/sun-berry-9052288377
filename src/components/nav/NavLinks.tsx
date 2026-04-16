@@ -19,11 +19,12 @@ export const NAV_ITEMS: NavItem[] = [
       { label: "Mobile App Development", to: "/services/mobile-app-development" },
       { label: "UI/UX Design", to: "/services/ui-ux-design" },
       { label: "Digital Marketing", to: "/services/digital-marketing" },
-      // { label: "Photography & Videography", to: "/services/photography-videography" },
       { label: "Data Analytics", to: "/services/data-analytics" },
       { label: "Internship Programs", to: "/services/internship-programs" },
       { label: "E-Learning Solutions", to: "/services/e-learning-solutions" },
       { label: "Game Development", to: "/services/game-development" },
+      { label: "AI Solutions", to: "/services/ai-solutions" },
+      { label: "Oracle Fusion Services", to: "/services/oracle-fusion-services" },
     ],
   },
   {

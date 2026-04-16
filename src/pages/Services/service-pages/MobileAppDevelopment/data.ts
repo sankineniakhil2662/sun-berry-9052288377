@@ -94,7 +94,7 @@ export const mobileAppDevData = {
         description:
           "High-performance native apps optimized for platform behaviors, animations, and device APIs.",
         icon: LayoutGrid,
-        accent: "pubrandrple",
+        accent: "purple",
       },
       {
         title: "Hybrid App",
