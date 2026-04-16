@@ -12,6 +12,7 @@ type ServicesData = {
   title: string;
   subtitle: string;
   items: ServiceItem[];
+  imageSrc: string;
 };
 
 export default function DevelopmentServices({ data }: { data: ServicesData }) {

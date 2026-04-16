@@ -135,10 +135,10 @@ export default function Footer() {
                   <Mail className="h-5 w-5 text-white/90" />
                 </span>
                 <a
-                  href="mailto:hello@Sunberry.com"
+                  href="mailto:admin@sunberryitsolutions.com"
                   className="transition hover:text-white"
                 >
-                  hello@Sunberry.com
+                  admin@sunberryitsolutions.com
                 </a>
               </div>
 

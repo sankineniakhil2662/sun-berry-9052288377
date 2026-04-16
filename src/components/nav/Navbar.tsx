@@ -74,7 +74,7 @@ const Navbar = () => {
               </span>
               <div className="leading-tight">
                 <div className="text-xs font-semibold text-muted">24×7 Support</div>
-                <div className="text-sm font-semibold text-heading">contact@Sunberry.com</div>
+                <div className="text-sm font-semibold text-heading">admin@sunberryitsolutions.com</div>
               </div>
             </div>
           </div>
