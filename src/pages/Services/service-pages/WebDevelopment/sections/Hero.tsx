@@ -1,8 +1,4 @@
-
-import React from "react";
 import { Link } from "react-router-dom";
-import Heropic from "../../../../../assets/services/webdevelopment/Heropic.png";
-
 
 type HeroData = {
   eyebrow: string;
@@ -11,14 +7,18 @@ type HeroData = {
   description: string;
   ctaLabel: string;
   imageAlt: string;
+  imageSrc: string;
 };
 
-export default function Hero({ data }: { data: HeroData }) {
+type HeroProps = {
+  data: HeroData;
+};
+
+export default function Hero({ data }: HeroProps) {
   return (
     <section className="bg-bg">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-12">
-          {/* Left */}
           <div className="max-w-xl">
             <div className="flex items-center gap-3">
               <span className="h-0.5 w-12 bg-brand" />
@@ -39,20 +39,10 @@ export default function Hero({ data }: { data: HeroData }) {
               {data.description}
             </p>
 
-            {/* CTA (Link -> /about) */}
             <div className="mt-7">
               <Link
                 to="/about"
-                className="
-                  inline-flex items-center justify-center
-                  rounded-full bg-brand px-7 py-3
-                  text-sm font-semibold text-white
-                  shadow-card
-                  transition
-                  hover:shadow-hover
-                  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2
-                  active:scale-95
-                "
+                className="inline-flex items-center justify-center rounded-full bg-brand px-7 py-3 text-sm font-semibold text-white shadow-card transition hover:shadow-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 active:scale-95"
                 aria-label="Learn more about Sunberry on About page"
               >
                 {data.ctaLabel}
@@ -60,13 +50,12 @@ export default function Hero({ data }: { data: HeroData }) {
             </div>
           </div>
 
-          {/* Right */}
           <div className="justify-self-center lg:justify-self-end">
             <div className="w-full max-w-xl">
-              <div className="mt-4 overflow-hidden rounded-2xl shadow-card ">
-                <div >
+              <div className="mt-4 overflow-hidden rounded-2xl shadow-card">
+                <div>
                   <img
-                    src={Heropic}
+                    src={data.imageSrc}
                     alt={data.imageAlt}
                     className="mx-auto block w-full max-w-lg"
                     loading="eager"
@@ -75,7 +64,6 @@ export default function Hero({ data }: { data: HeroData }) {
               </div>
             </div>
           </div>
-          {/* /Right */}
         </div>
       </div>
     </section>

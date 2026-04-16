@@ -20,6 +20,8 @@ import DataAnalytics from "./pages/Services/service-pages/DataAnalytics/DataAnal
 import DigitalMarketingPage from "./pages/Services/service-pages/DigitalMarketing/DigitalMarketingPage";
 import GamingDevelopmentPage from "./pages/Services/service-pages/GamingDevelopment/GamingDevelopmentPage";
 import InternshipProgramsPage from "./pages/Services/service-pages/InternshipPrograms/InternshipProgramsPage";
+import AISolutionsPage from "./pages/Services/service-pages/AISolutions/AISolutionsPage";
+import OracleFusionPage from "./pages/Services/service-pages/OracleFusion/OracleFusionPage";
 import ElearningRoutes from "./pages/Services/service-pages/E-Learning/ElearningPage";
 import TechnologyGrid from "./pages/Services/service-pages/E-Learning/sections/TechnologyGrid";
 import TechnologyPage from "./pages/Services/service-pages/E-Learning/pages/TechnologyPage";
@@ -47,6 +49,8 @@ const App = () => {
           <Route path="/services/game-development" element={<GamingDevelopmentPage />} />
           <Route path="/services/internship-programs" element={<InternshipProgramsPage />} />
           <Route path="/services/data-analytics" element={<DataAnalytics />} />
+          <Route path="/services/ai-solutions" element={<AISolutionsPage />} />
+          <Route path="/services/oracle-fusion-services" element={<OracleFusionPage />} />
           <Route path="/our-process" element={<OurProcessSection />} />
           <Route path="/industries" element={<Industries />} />
           <Route path="/industries/:slug" element={<Industries/>} />

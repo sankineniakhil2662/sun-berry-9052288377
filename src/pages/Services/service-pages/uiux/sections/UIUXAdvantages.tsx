@@ -1,32 +1,38 @@
-import React from "react";
+import { Check } from "lucide-react";
+import { ScrollReveal, SectionHeader } from "../../../../../components/branding";
 import { UIUX_ADVANTAGES } from "../uiux.data";
 
 const UIUXAdvantages = () => {
   return (
-    <section className=" bg-[#062a64] text-white">
-      <div className="mx-auto max-w-350 px-4 py-16 sm:px-6 lg:px-8">
-        <div className="text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-white/80">
-            EXPERIENCE
-          </p>
-          <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
-            {UIUX_ADVANTAGES.title}
-          </h2>
-          <p className="mx-auto mt-4 max-w-3xl text-sm leading-relaxed text-white/75">
-            {UIUX_ADVANTAGES.desc}
-          </p>
-        </div>
+    <section className="w-full bg-bg py-20">
+      <div className="mx-auto w-full max-w-7xl px-6 lg:px-10">
+        <SectionHeader
+          eyebrow="Experience"
+          title={UIUX_ADVANTAGES.title}
+          subtitle={UIUX_ADVANTAGES.desc}
+          align="center"
+          maxWidth="max-w-4xl"
+        />
 
-        <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {UIUX_ADVANTAGES.items.map((a) => (
-            <div
-              key={a.title}
-              className="rounded-(--radius-card) border border-white/10 bg-white/5 p-6 transition-colors hover:bg-white/8"
-            >
-              <div className="h-10 w-10 rounded-xl bg-[rgb(var(--color-accent-cyan)/0.20)]" />
-              <h3 className="mt-4 text-lg font-semibold">{a.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-white/75">{a.desc}</p>
-            </div>
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {UIUX_ADVANTAGES.items.map((a, idx) => (
+            <ScrollReveal key={a.title} delay={idx * 0.05}>
+              <div className="group relative h-full overflow-hidden rounded-2xl border border-border bg-surface p-6 shadow-card transition hover:-translate-y-0.5 hover:shadow-hover">
+                <div
+                  aria-hidden
+                  className="pointer-events-none absolute -top-10 -right-10 h-36 w-36 rounded-full bg-[rgb(var(--color-accent-cyan))]/10 blur-3xl transition group-hover:bg-[rgb(var(--color-accent-cyan))]/20"
+                />
+                <div className="relative flex items-start gap-4">
+                  <span className="mt-0.5 flex h-10 w-10 flex-none items-center justify-center rounded-xl bg-gradient-to-br from-[rgb(var(--color-accent-purple))] to-[rgb(var(--color-accent-cyan))] text-white shadow-card">
+                    <Check className="h-5 w-5" />
+                  </span>
+                  <div>
+                    <h3 className="text-lg font-semibold tracking-tight text-heading">{a.title}</h3>
+                    <p className="mt-2 text-sm leading-6 text-body">{a.desc}</p>
+                  </div>
+                </div>
+              </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>

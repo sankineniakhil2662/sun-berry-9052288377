@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import { SectionHeader } from "../../../components/branding";
 
 const testimonials = [
   {
@@ -82,7 +83,7 @@ const TestimonialsSection = () => {
             </h2>
           </div>
           <p className="mt-3 text-base text-body">
-            What our clients say about working with Sunberry.
+            What our clients say about working with TYL-Tech.
           </p>
         </div>
       </div>

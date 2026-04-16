@@ -23,6 +23,8 @@ export const NAV_ITEMS: NavItem[] = [
       { label: "Internship Programs", to: "/services/internship-programs" },
       { label: "E-Learning Solutions", to: "/services/e-learning-solutions" },
       { label: "Game Development", to: "/services/game-development" },
+      { label: "AI Solutions", to: "/services/ai-solutions" },
+      { label: "Oracle Fusion Services", to: "/services/oracle-fusion-services" },
     ],
   },
   {

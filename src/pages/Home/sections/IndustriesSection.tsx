@@ -1,42 +1,41 @@
 import IndustryCard from "../../../components/IndustryCard";
 import { INDUSTRIES } from "../../Industries/industries.data";
+import { ScrollReveal, SectionHeader } from "../../../components/branding";
 
 const IndustriesSection = () => {
   return (
-    <section className="bg-surface py-20">
-      <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-muted">
-            Industries
-          </p>
-          <div className="mt-2 flex items-center justify-center">
-            <h2 className="mt-3 text-3xl font-semibold text-[rgb(var(--color-accent-magenta))] sm:text-4xl">
+    <section className="bg-bg py-20">
+      <div className="mx-auto max-w-7xl px-6 lg:px-10">
+        <SectionHeader
+          eyebrow="Industries"
+          title={
+            <>
               Tailored expertise for{" "}
-              <span className="text-heading">
+              <span className="bg-gradient-to-r from-[rgb(var(--color-accent-purple))] via-[rgb(var(--color-accent-magenta))] to-[rgb(var(--color-accent-cyan))] bg-clip-text text-transparent">
                 complex domains
               </span>
-            </h2>
-          </div>
+            </>
+          }
+          subtitle="We understand the compliance, data, and operational needs of your sector."
+          align="center"
+          maxWidth="max-w-3xl"
+        />
 
-          <p className="mt-3 text-base text-body">
-            We understand the compliance, data, and operational needs of your sector.
-          </p>
-        </div>
-
-        <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {INDUSTRIES.map((i) => (
-            <IndustryCard
-              key={i.key}
-              title={i.title}
-              label={i.label}
-              description={i.description}
-              features={i.features}
-              moreCount={i.moreCount}
-              ctaLabel={i.ctaLabel}
-              href={i.href}
-              iconSrc={i.iconSrc}
-              accent={i.accent}
-            />
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {INDUSTRIES.map((i, idx) => (
+            <ScrollReveal key={i.key} delay={idx * 0.04}>
+              <IndustryCard
+                title={i.title}
+                label={i.label}
+                description={i.description}
+                features={i.features}
+                moreCount={i.moreCount}
+                ctaLabel={i.ctaLabel}
+                href={i.href}
+                iconSrc={i.iconSrc}
+                accent={i.accent}
+              />
+            </ScrollReveal>
           ))}
         </div>
       </div>

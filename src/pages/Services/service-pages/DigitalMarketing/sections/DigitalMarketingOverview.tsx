@@ -1,72 +1,47 @@
-import type { DigitalMarketingData } from "../digitalmarketing.data";
-import Overviewpic from "../../../../../assets/services/DigitalMarketing/Overviewpic.jpeg"
+import { Check } from "lucide-react";
+import { ScrollReveal, SectionHeader } from "../../../../../components/branding";
+import type { DigitalMarketingOverviewData } from "../digitalmarketing.data";
 
-type DigitalMarketingOverviewProps = {
-  data: DigitalMarketingData;
-};
-
-export default function DigitalMarketingOverview({
-  data,
-}: DigitalMarketingOverviewProps) {
-  const {
-    title,
-    description,
-    whyTitle,
-    whyDescription,
-    benefitsLabel,
-    points,
-    imageAlt,
-  } = data.overview;
-
+export default function DigitalMarketingOverview({ data }: { data: DigitalMarketingOverviewData }) {
   return (
-    <section className="w-full bg-bg">
-      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        {/* Top: Overview text + image */}
-        <div className="grid items-start gap-12 lg:grid-cols-2">
-          <div>
-            <h2 className="text-3xl font-semibold leading-tight text-heading sm:text-4xl">
-              {title}
-            </h2>
-
-            <p className="mt-4 max-w-xl text-sm leading-relaxed text-body sm:text-base">
-              {description}
-            </p>
-
-            <div className="mt-10 border-t border-border" />
-          </div>
-
-          <div className="mx-auto max-w-lg overflow-hidden rounded-2xl border border-boder bg-surface ">
-            <div className="max-h-120">
-              <img
-                src={Overviewpic}
-                alt={imageAlt}
-                className="h-auto w-full object-contain"
-                loading="lazy"
-              />
-            </div>
-          </div>
+    <section className="w-full bg-surface/40 py-20">
+      <div className="mx-auto grid w-full max-w-7xl gap-12 px-6 lg:grid-cols-2 lg:gap-16 lg:px-10">
+        <div>
+          <SectionHeader title={data.title} />
+          <ScrollReveal delay={0.1}>
+            <p className="mt-6 text-base leading-7 text-body sm:text-lg">{data.description}</p>
+          </ScrollReveal>
+          <ScrollReveal delay={0.15}>
+            <h3 className="mt-8 text-xl font-semibold tracking-tight text-heading">
+              {data.whyTitle}
+            </h3>
+            <p className="mt-3 text-base leading-7 text-body">{data.whyDescription}</p>
+          </ScrollReveal>
         </div>
 
-        {/* Bottom: Why + benefits */}
-        <div className="mt-16">
-          <h3 className="text-2xl font-semibold leading-tight text-heading sm:text-3xl">
-            {whyTitle}
-          </h3>
-
-          <p className="mt-4 max-w-4xl text-sm leading-relaxed text-body sm:text-base">
-            {whyDescription}
-          </p>
-
-          <p className="mt-8 text-sm font-semibold text-heading sm:text-base">
-            {benefitsLabel}
-          </p>
-
-          <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-relaxed text-body sm:text-base">
-            {points.map((point) => (
-              <li key={point}>{point}</li>
-            ))}
-          </ul>
-        </div>
+        <ScrollReveal direction="left" delay={0.15}>
+          <div className="relative h-full rounded-3xl border border-border bg-surface p-8 shadow-card">
+            <div
+              aria-hidden
+              className="pointer-events-none absolute -top-8 -right-8 h-40 w-40 rounded-full bg-[rgb(var(--color-accent-purple))]/10 blur-3xl"
+            />
+            <div
+              aria-hidden
+              className="pointer-events-none absolute -bottom-8 -left-8 h-40 w-40 rounded-full bg-[rgb(var(--color-accent-magenta))]/10 blur-3xl"
+            />
+            <h3 className="relative text-lg font-semibold text-heading">Key benefits</h3>
+            <ul className="relative mt-5 space-y-3.5">
+              {data.points.map((p) => (
+                <li key={p} className="flex items-start gap-3">
+                  <span className="mt-0.5 flex h-7 w-7 flex-none items-center justify-center rounded-full bg-gradient-to-br from-[rgb(var(--color-accent-purple))] to-[rgb(var(--color-accent-magenta))] text-white">
+                    <Check className="h-4 w-4" />
+                  </span>
+                  <span className="text-sm leading-6 text-body sm:text-base">{p}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </ScrollReveal>
       </div>
     </section>
   );

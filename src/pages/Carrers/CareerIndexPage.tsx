@@ -1,5 +1,6 @@
 import React, { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
+import { ScrollReveal } from "../../components/branding";
 import { CAREER_POSTS, CAREER_DEPARTMENTS, formatDate, type CareerPost } from "./careers.data";
 
 type SortKey = "oldest" | "newest";
@@ -22,7 +23,11 @@ function StatPill({ label, dotClass }: { label: string; dotClass: string }) {
 
 function JobCard({ post }: { post: CareerPost }) {
   return (
-    <article className="rounded-card border border-border bg-surface p-6 shadow-card transition hover:shadow-hover">
+    <article className="group relative overflow-hidden rounded-2xl border border-border bg-surface p-6 shadow-card transition hover:-translate-y-0.5 hover:border-[rgb(var(--color-accent-purple))]/40 hover:shadow-hover">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -top-10 -right-10 h-36 w-36 rounded-full bg-[rgb(var(--color-accent-purple))]/10 blur-3xl transition group-hover:bg-[rgb(var(--color-accent-purple))]/20"
+      />
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div className="min-w-0">
           <h3 className="truncate text-lg font-semibold text-heading sm:text-xl">
@@ -117,15 +122,28 @@ export default function CareerIndexPage() {
   return (
     <main className="bg-bg">
       {/* HERO */}
-      <section className="border-b border-border bg-surface">
-        <div className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl font-semibold leading-tight text-heading sm:text-5xl">
+      <section className="relative w-full overflow-hidden border-b border-border">
+        <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
+          <div className="absolute -top-24 -left-16 h-80 w-80 rounded-full bg-[rgb(var(--color-accent-purple))]/15 blur-3xl" />
+          <div className="absolute bottom-0 right-0 h-80 w-80 rounded-full bg-[rgb(var(--color-accent-magenta))]/15 blur-3xl" />
+          <div className="absolute top-1/3 right-1/3 h-64 w-64 rounded-full bg-[rgb(var(--color-accent-cyan))]/10 blur-3xl" />
+        </div>
+
+        <div className="mx-auto max-w-7xl px-6 py-16 lg:px-10 lg:py-20">
+          <div className="mx-auto max-w-3xl text-center">
+            <div className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/80 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-muted backdrop-blur">
+              <span className="h-1.5 w-1.5 rounded-full bg-[rgb(var(--color-accent-magenta))]" />
+              Careers
+            </div>
+
+            <h1 className="mt-6 text-4xl font-bold leading-[1.1] tracking-tight text-heading sm:text-5xl lg:text-6xl">
               Join Our{" "}
-              <span className="text-[rgb(var(--color-accent-magenta))]">Amazing Team</span>
+              <span className="bg-gradient-to-r from-[rgb(var(--color-accent-purple))] via-[rgb(var(--color-accent-magenta))] to-[rgb(var(--color-accent-cyan))] bg-clip-text text-transparent">
+                Amazing Team
+              </span>
             </h1>
 
-            <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-body sm:text-lg">
+            <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-muted">
               Build the future with us. We&apos;re looking for passionate individuals to join our growing
               team and create innovative solutions together.
             </p>
@@ -251,7 +269,11 @@ export default function CareerIndexPage() {
                   </div>
                 </div>
               ) : (
-                pageItems.map((p) => <JobCard key={p.id} post={p} />)
+                pageItems.map((p, idx) => (
+                  <ScrollReveal key={p.id} delay={idx * 0.05}>
+                    <JobCard post={p} />
+                  </ScrollReveal>
+                ))
               )}
             </div>
 
