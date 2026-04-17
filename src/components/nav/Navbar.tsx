@@ -98,19 +98,20 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* BOTTOM STRIP (nav links centered) */}
-      <div className="hidden md:block bg-[#062a64]">
+      {/* BOTTOM STRIP (desktop only) */}
+      <div className="hidden bg-[#062a64] md:block">
         <div className="mx-auto flex h-14 max-w-7xl items-center justify-center px-4 sm:px-6 lg:px-8">
           <NavLinks activePath={location.pathname} onHomeClick={handleHomeClick} />
         </div>
-
-        <MobileMenu
-          activePath={location.pathname}
-          isOpen={isOpen}
-          onClose={() => setIsOpen(false)}
-          onHomeClick={handleHomeClick}
-        />
       </div>
+
+      {/* MOBILE MENU */}
+      <MobileMenu
+        activePath={location.pathname}
+        isOpen={isOpen}
+        onClose={() => setIsOpen(false)}
+        onHomeClick={handleHomeClick}
+      />
     </header>
   );
 };
