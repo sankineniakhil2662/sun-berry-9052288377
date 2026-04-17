@@ -1,42 +1,30 @@
-import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
+type IndustryAccent = "brand" | "navy" | "purple" | undefined;
+
 type IndustryCardProps = {
-  title: string; // "Medical"
-  label: string; // "HEALTHCARE INNOVATIONS"
+  title: string;
+  label: string;
   description: string;
-  features: string[]; // show first 3
-  moreCount?: number; // "+2 more features"
-  ctaLabel: string; // "Explore Medical Tech"
-  href: string; // "/industries/medical"
-  iconSrc?: string; // optional (top-left icon)
-  accent?: "brand" | "navy" | "purple"; // for button/bg flavor
+  features: string[];
+  moreCount?: number;
+  ctaLabel: string;
+  href: string;
+  iconSrc?: string;
+  accent?: IndustryAccent;
 };
 
-const ease = [0.2, 0.8, 0.2, 1] as const;
+const accentMap: Record<Exclude<IndustryAccent, undefined>, string> = {
+  brand: "bg-[rgb(var(--color-accent-purple))]",
+  navy: "bg-[#062a64]",
+  purple: "bg-[rgb(var(--color-accent-purple))]",
+};
 
-const accentStyles = (accent?: IndustryCardProps["accent"]) => {
-  switch (accent) {
-    case "navy":
-      return {
-        btn: "bg-[#062a64] hover:bg-[#062a64]/90",
-        bullet: "bg-[#062a64]",
-        iconBg: "bg-[#062a64]",
-      };
-    case "purple":
-      return {
-        btn: "bg-[rgb(var(--color-accent-purple))] hover:opacity-90",
-        bullet: "bg-[rgb(var(--color-accent-purple))]",
-        iconBg: "bg-[rgb(var(--color-accent-purple))]",
-      };
-    case "brand":
-    default:
-      return {
-        btn: "bg-brand hover:bg-brandHover",
-        bullet: "bg-brand",
-        iconBg: "bg-brand",
-      };
-  }
+const accentDotMap: Record<Exclude<IndustryAccent, undefined>, string> = {
+  brand: "bg-[rgb(var(--color-accent-purple))]",
+  navy: "bg-[#062a64]",
+  purple: "bg-[rgb(var(--color-accent-purple))]",
 };
 
 const IndustryCard = ({
@@ -44,127 +32,83 @@ const IndustryCard = ({
   label,
   description,
   features,
-  moreCount,
+  moreCount = 0,
   ctaLabel,
   href,
   iconSrc,
   accent = "brand",
 }: IndustryCardProps) => {
-  const a = accentStyles(accent);
-
-  const shown = features.slice(0, 3);
-  const computedMore =
-    typeof moreCount === "number"
-      ? moreCount
-      : Math.max(features.length - shown.length, 0);
+  const accentClass = accentMap[accent] ?? accentMap.brand;
+  const dotClass = accentDotMap[accent] ?? accentDotMap.brand;
 
   return (
-    <motion.article
-      initial={{ opacity: 0, y: 14 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.35 }}
-      transition={{ duration: 0.7, ease }}
-      className="group relative flex h-full flex-col overflow-hidden rounded-card border border-border bg-surface shadow-card transition hover:shadow-hover"
-    >
-      {/* top-left curved tint like screenshot */}
-      <div className="pointer-events-none absolute -left-10 -top-10 h-32 w-32 rounded-full bg-slate-200/70" />
+    <article className="relative h-full w-full overflow-hidden rounded-3xl border border-border bg-surface shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+      <div className="pointer-events-none absolute left-0 top-0 h-20 w-24 rounded-br-[28px] bg-slate-100" />
 
-      <div className="relative flex h-full flex-col p-8">
-        {/* top row: icon + title */}
-        <div className="flex items-start justify-between gap-6">
-          {/* icon block (top-left) */}
-          <motion.div
-            initial={{ scale: 0.98, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1 }}
-            viewport={{ once: true, amount: 0.4 }}
-            transition={{ duration: 0.6, ease, delay: 0.05 }}
-            className={`flex h-16 w-16 items-center justify-center rounded-2xl ${a.iconBg} shadow-card`}
+      <div className="relative flex h-full flex-col p-5 sm:p-6">
+        <div className="flex items-start gap-4">
+          <div
+            className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl text-xl font-semibold text-white shadow-md sm:h-16 sm:w-16 ${accentClass}`}
           >
-            {/* inner layer for premium feel */}
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10">
-              {iconSrc ? (
-                <img
-                  src={iconSrc}
-                  alt=""
-                  className="h-7 w-7 object-contain"
-                  loading="lazy"
-                />
-              ) : (
-                <span className="text-xl font-bold uppercase text-white">
-                  {title.charAt(0)}
-                </span>
-              )}
-            </div>
+            {iconSrc ? (
+              <img
+                src={iconSrc}
+                alt={title}
+                className="h-7 w-7 object-contain sm:h-8 sm:w-8"
+                loading="lazy"
+                draggable={false}
+              />
+            ) : (
+              title.charAt(0)
+            )}
+          </div>
 
-          </motion.div>
-
-          {/* title block (right aligned like screenshot) */}
-          <div className="min-w-0 text-right">
-            <h3 className="text-4xl font-semibold text-heading sm:text-5xl">
+          <div className="min-w-0 flex-1">
+            <h3 className="min-w-0 wrap-break-word text-[clamp(1.75rem,7vw,2.5rem)] font-semibold leading-tight tracking-tight text-heading sm:text-4xl">
               {title}
             </h3>
-            <p className="mt-2 text-sm font-semibold uppercase tracking-widest text-muted">
+
+            <p className="mt-2 max-w-full wrap-break-word text-xs font-semibold uppercase tracking-[0.12em] text-muted sm:text-sm sm:tracking-[0.18em]">
               {label}
             </p>
           </div>
         </div>
 
-        {/* description */}
-        <p className="mt-8 text-lg leading-relaxed text-body">{description}</p>
+        <p className="mt-8 text-base leading-8 text-body sm:text-lg">
+          {description}
+        </p>
 
-        {/* features list */}
-        <ul className="mt-8 space-y-6">
-          {shown.map((f) => (
-            <li key={f} className="flex items-start gap-4">
-              <span className="mt-2 flex h-3 w-3 items-center justify-center">
-                <span className={`h-3 w-3 rounded-full ${a.bullet}`} />
+        <ul className="mt-8 space-y-5">
+          {features.slice(0, 3).map((feature) => (
+            <li key={feature} className="flex items-start gap-4">
+              <span className={`mt-2 h-3 w-3 shrink-0 rounded-full ${dotClass}`} />
+              <span className="text-base font-semibold leading-8 text-heading sm:text-lg">
+                {feature}
               </span>
-              <span className="text-lg font-semibold text-heading/80">{f}</span>
             </li>
           ))}
         </ul>
 
-        {/* more features */}
-        {computedMore > 0 ? (
-          <div className="mt-6">
-            <span className="text-base font-semibold text-[rgb(var(--color-accent-magenta))]">
-              +{computedMore}
-            </span>
-            <span className="text-base text-body"> more features</span>
-          </div>
+        {moreCount > 0 ? (
+          <p className="mt-6 text-base text-body sm:text-lg">
+            <span className="font-semibold text-[rgb(var(--color-accent-magenta))]">
+              +{moreCount}
+            </span>{" "}
+            more features
+          </p>
         ) : null}
 
-        {/* CTA pinned to bottom */}
-        <div className="relative mt-auto pt-10">
-          <Link to={href} className="absolute bottom-0 right-0">
-            <motion.div
-              whileHover={{ y: -2 }}
-              whileTap={{ scale: 0.95 }}
-              transition={{ duration: 0.25, ease }}
-              className={`
-        flex h-12 w-12 items-center justify-center
-        rounded-full
-        bg-[rgb(var(--color-accent-purple))]
-        text-white
-        shadow-card
-        transition
-        hover:shadow-lg
-        ${a.btn}
-      `}
-              aria-label="Navigate"
-            >
-              <span aria-hidden="true" className="text-xl leading-none">
-                →
-              </span>
-            </motion.div>
+        <div className="mt-auto flex justify-end pt-8">
+          <Link
+            to={href}
+            aria-label={ctaLabel}
+            className={`inline-flex h-12 w-12 items-center justify-center rounded-full text-white transition-transform duration-300 hover:scale-105 ${accentClass}`}
+          >
+            <ArrowRight className="h-5 w-5" />
           </Link>
         </div>
-
       </div>
-
-      {/* soft bottom shadow highlight */}
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/10 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-    </motion.article>
+    </article>
   );
 };
 

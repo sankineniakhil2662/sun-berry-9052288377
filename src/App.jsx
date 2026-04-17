@@ -5,7 +5,6 @@ import Home from "./pages/Home";
 import About from "./pages/About/AboutPage";
 import Services from "./pages/Services/ServicesPage";
 import Industries from "./pages/Industries/IndustriesPage";
-import Career from "./pages/Carrers/CareerIndexPage"
 import Contact from "./pages/Contact/ContactPage";
 import CareerIndexPage from "./pages/Carrers/CareerIndexPage";
 import CareerPostPage from "./pages/Carrers/CareerPostPage";
@@ -27,44 +26,44 @@ import TechnologyGrid from "./pages/Services/service-pages/E-Learning/sections/T
 import TechnologyPage from "./pages/Services/service-pages/E-Learning/pages/TechnologyPage";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
-
 const App = () => {
   return (
     <Router>
-      <ScrollToTop/>
+      <ScrollToTop />
 
-      <Navbar />
+      <div className="min-h-screen overflow-x-hidden md:overflow-x-visible">
+        <Navbar />
 
-      {/* IMPORTANT: push content below navbar */}
-      <div className="pt-24">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/services/ui-ux-design" element={<UIUXDesignPage />} />
-          <Route path="/services/mobile-app-development" element={<MobileAppDevelopment />} />
-          <Route path="/services/digital-marketing" element={<DigitalMarketingPage />} />
-          <Route path="/services/web-development" element={<WebDevelopmentPage />} />
-          <Route path="/services/e-learning-solutions" element={<ElearningPage />} />
-          <Route path="/services/game-development" element={<GamingDevelopmentPage />} />
-          <Route path="/services/internship-programs" element={<InternshipProgramsPage />} />
-          <Route path="/services/data-analytics" element={<DataAnalytics />} />
-          <Route path="/services/ai-solutions" element={<AISolutionsPage />} />
-          <Route path="/services/oracle-fusion-services" element={<OracleFusionPage />} />
-          <Route path="/our-process" element={<OurProcessSection />} />
-          <Route path="/industries" element={<Industries />} />
-          <Route path="/industries/:slug" element={<Industries/>} />
-          <Route path="/careers" element={<CareerIndexPage />} />
-          <Route path="/careers/:slug" element={<CareerPostPage />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/quote" element={<Quote />} />
-          <Route path="/services/e-learning/*" element={<ElearningRoutes />} />
-          <Route path="/services/e-learning" element={<TechnologyGrid />} />
-          <Route path="/services/e-learning/:techSlug" element={<TechnologyPage />} />
-        </Routes>
+        <main className="w-full max-w-full pt-24">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/services/ui-ux-design" element={<UIUXDesignPage />} />
+            <Route path="/services/mobile-app-development" element={<MobileAppDevelopment />} />
+            <Route path="/services/digital-marketing" element={<DigitalMarketingPage />} />
+            <Route path="/services/web-development" element={<WebDevelopmentPage />} />
+            <Route path="/services/e-learning-solutions" element={<ElearningPage />} />
+            <Route path="/services/game-development" element={<GamingDevelopmentPage />} />
+            <Route path="/services/internship-programs" element={<InternshipProgramsPage />} />
+            <Route path="/services/data-analytics" element={<DataAnalytics />} />
+            <Route path="/services/ai-solutions" element={<AISolutionsPage />} />
+            <Route path="/services/oracle-fusion-services" element={<OracleFusionPage />} />
+            <Route path="/our-process" element={<OurProcessSection />} />
+            <Route path="/industries" element={<Industries />} />
+            <Route path="/industries/:slug" element={<Industries />} />
+            <Route path="/careers" element={<CareerIndexPage />} />
+            <Route path="/careers/:slug" element={<CareerPostPage />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/quote" element={<Quote />} />
+            <Route path="/services/e-learning/*" element={<ElearningRoutes />} />
+            <Route path="/services/e-learning" element={<TechnologyGrid />} />
+            <Route path="/services/e-learning/:techSlug" element={<TechnologyPage />} />
+          </Routes>
+        </main>
+
+        <Footer />
       </div>
-
-      <Footer />
     </Router>
   );
 };

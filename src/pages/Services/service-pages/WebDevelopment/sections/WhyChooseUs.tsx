@@ -38,7 +38,7 @@ export default function WhyChooseUs({ data }: { data: WhyChooseUsData }) {
             <ul className="relative mt-5 space-y-3.5">
               {data.points.map((p) => (
                 <li key={p} className="flex items-start gap-3">
-                  <span className="mt-0.5 flex h-7 w-7 flex-none items-center justify-center rounded-full bg-gradient-to-br from-[rgb(var(--color-accent-purple))] to-[rgb(var(--color-accent-magenta))] text-white">
+                  <span className="mt-0.5 flex h-7 w-7 flex-none items-center justify-center rounded-full bg-linear-to-br from-[rgb(var(--color-accent-purple))] to-[rgb(var(--color-accent-magenta))] text-white">
                     <Check className="h-4 w-4" />
                   </span>
                   <span className="text-sm leading-6 text-body sm:text-base">{p}</span>

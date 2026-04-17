@@ -1,5 +1,5 @@
 import ProcessTimeline from "../../../components/process/ProcessTimeline";
-import { ScrollReveal, SectionHeader } from "../../../components/branding";
+import { SectionHeader } from "../../../components/branding";
 
 const OurProcessSection = () => {
   return (
@@ -10,7 +10,7 @@ const OurProcessSection = () => {
           title={
             <>
               A transparent path{" "}
-              <span className="bg-gradient-to-r from-[rgb(var(--color-accent-purple))] via-[rgb(var(--color-accent-magenta))] to-[rgb(var(--color-accent-cyan))] bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-[rgb(var(--color-accent-purple))] via-[rgb(var(--color-accent-magenta))] to-[rgb(var(--color-accent-cyan))] bg-clip-text text-transparent">
                 from concept to launch
               </span>
             </>
@@ -20,11 +20,9 @@ const OurProcessSection = () => {
           maxWidth="max-w-3xl"
         />
 
-        <ScrollReveal delay={0.1}>
-          <div className="mt-12">
-            <ProcessTimeline />
-          </div>
-        </ScrollReveal>
+        <div className="mt-12">
+          <ProcessTimeline />
+        </div>
       </div>
     </section>
   );

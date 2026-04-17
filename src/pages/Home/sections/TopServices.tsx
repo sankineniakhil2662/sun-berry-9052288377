@@ -30,7 +30,7 @@ const TopServices = () => {
       <div className="pointer-events-none absolute inset-0">
         {/* subtle square grid */}
         <div className="absolute inset-0 opacity-40">
-          <div className="h-full w-full bg-[linear-gradient(to_right,rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.08)_1px,transparent_1px)] bg-[size:56px_56px]" />
+          <div className="h-full w-full bg-[linear-gradient(to_right,rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.08)_1px,transparent_1px)] bg-size-[56px_56px]" />
         </div>
       </div>
 
@@ -49,7 +49,7 @@ const TopServices = () => {
           </p>
           <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
             Project Execution with{" "}
-            <span className="bg-gradient-to-r from-[rgb(var(--color-accent-purple))] via-[rgb(var(--color-accent-magenta))] to-[rgb(var(--color-accent-cyan))] bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-[rgb(var(--color-accent-purple))] via-[rgb(var(--color-accent-magenta))] to-[rgb(var(--color-accent-cyan))] bg-clip-text text-transparent">
               Quality-First Approach
             </span>
           </h2>
@@ -61,7 +61,7 @@ const TopServices = () => {
         {/* Timeline */}
         <div className="relative mt-14 grid gap-10 lg:grid-cols-2">
           {/* Center line */}
-          <div className="absolute left-1/2 top-0 hidden h-full w-px -translate-x-1/2 bg-gradient-to-b from-transparent via-white/30 to-transparent lg:block" />
+          <div className="absolute left-1/2 top-0 hidden h-full w-px -translate-x-1/2 bg-linear-to-b from-transparent via-white/30 to-transparent lg:block" />
 
           {(services as Service[]).map((item, index) => {
             const isLeft = index % 2 === 0;
@@ -73,6 +73,7 @@ const TopServices = () => {
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.55, ease, delay: index * 0.05 }}
                 className={`relative flex ${isLeft ? "lg:justify-end" : "lg:justify-start"}`}
+                
               >
 
 
@@ -105,16 +106,16 @@ const TopServices = () => {
                     <Link
                       to={item.href}
                       className="
-                                  inline-flex w-full items-center justify-center gap-2
-                                  rounded-button bg-brand px-6 py-3
-                                  text-sm font-semibold text-white
-                                  shadow-card transition
-                                  hover:bg-brandHover
-                                  focus:outline-none focus:ring-2 focus:ring-white/30
-                                "
+                        inline-flex w-full items-center justify-center gap-2
+                        rounded-button bg-brand px-6 py-3
+                        text-sm font-semibold text-white
+                        shadow-card transition
+                        hover:bg-brandHover
+                        focus:outline-none focus:ring-2 focus:ring-white/30
+                      "
                     >
-                      {item.ctaLabel ?? `Explore ${item.title}`}
-                      <span aria-hidden="true">→</span>
+                      Explore {item.title}
+                      <span>→</span>
                     </Link>
                   </div>
 
