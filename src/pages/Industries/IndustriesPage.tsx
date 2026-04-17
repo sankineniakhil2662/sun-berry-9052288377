@@ -61,6 +61,18 @@ const cardV = {
   show: { opacity: 1, y: 0, transition: { duration: 0.7, ease } },
 };
 
+const slugToDataKey: Record<string, keyof typeof INDUSTRIES_DATA> = {
+  agriculture: "agriculture-farming",
+  fintech: "fintech",
+  healthcare: "healthcare-fitness",
+  education: "education",
+  ecommerce: "e-commerce",
+  "food-delivery": "food-delivery",
+  logistics: "logistics",
+  "real-estate": "real-estate-marketplace",
+  "social-media": "social-media",
+};
+
 function SectionCard({
   a,
   section,
@@ -76,11 +88,11 @@ function SectionCard({
   return (
     <motion.article
       variants={cardV}
-      className={`group relative overflow-hidden rounded-card border border-border bg-surface shadow-card transition hover:shadow-hover ${alignRight ? "md:translate-y-4" : ""
-        }`}
+      className={`group relative overflow-hidden rounded-card border border-border bg-surface shadow-card transition hover:shadow-hover ${
+        alignRight ? "md:translate-y-4" : ""
+      }`}
     >
-      {/* decorative */}
-      <div className={`pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100`}>
+      <div className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
         <div className={`absolute -right-20 -top-20 h-64 w-64 rounded-full blur-3xl ${a.soft}`} />
         <div className={`absolute -left-16 -bottom-16 h-56 w-56 rounded-full blur-3xl ${a.soft}`} />
       </div>
@@ -92,7 +104,6 @@ function SectionCard({
               {section.eyebrow}
             </p>
 
-            {/* small accent chip */}
             <span className={`inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold text-heading ring-1 ${a.ring}`}>
               <span className={`h-2 w-2 rounded-full ${a.dot}`} />
               Section
@@ -131,23 +142,22 @@ function SectionCard({
         ) : null}
       </div>
 
-      {/* subtle bottom highlight */}
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-20 bg-linear-to-t from-black/5 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
     </motion.article>
   );
 }
 
 export default function IndustryDetailPage() {
-  const { slug } = useParams();
-  const data =
-    (slug ? INDUSTRIES_DATA[slug] : undefined) ??
-    INDUSTRIES_DATA["agriculture-farming"];
+  const { slug } = useParams<{ slug?: string }>();
 
+  const resolvedKey =
+    (slug ? slugToDataKey[slug] : undefined) ?? "agriculture-farming";
+
+  const data = INDUSTRIES_DATA[resolvedKey] ?? INDUSTRIES_DATA["agriculture-farming"];
   const a = accentTokens(data.accent);
 
   return (
     <main className="bg-bg">
-      {/* HERO */}
       <section className="relative overflow-hidden bg-[#062a64] text-white">
         <div className="pointer-events-none absolute inset-0">
           <div className="absolute inset-0 opacity-40">
@@ -158,7 +168,6 @@ export default function IndustryDetailPage() {
         </div>
 
         <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 py-16 md:grid-cols-2 md:py-20">
-          {/* Left */}
           <div className="relative">
             <motion.div
               initial={{ opacity: 0, y: 10 }}
@@ -221,8 +230,6 @@ export default function IndustryDetailPage() {
             </div>
           </div>
 
-          {/* Right: Elegant image placeholder */}
-          {/* Right: Premium Mockup Card */}
           <motion.div
             initial={{ opacity: 0, x: 18 }}
             animate={{ opacity: 1, x: 0 }}
@@ -240,9 +247,8 @@ export default function IndustryDetailPage() {
                 />
               </div>
 
-              {/* mini row */}
               <div className="mt-4 flex items-center justify-between">
-                <div className={`inline-flex items-center gap-2 rounded-full border border-border bg-bg px-4 py-2 text-xs font-semibold text-muted`}>
+                <div className="inline-flex items-center gap-2 rounded-full border border-border bg-bg px-4 py-2 text-xs font-semibold text-muted">
                   <span className={`h-2 w-2 rounded-full ${a.dot}`} />
                   Interactive
                 </div>
@@ -254,81 +260,32 @@ export default function IndustryDetailPage() {
                 </div>
               </div>
             </div>
-
-            {/* subtle orbit dots */}
-            <motion.div
-              aria-hidden="true"
-              className={`pointer-events-none absolute -right-10 top-10 hidden h-5 w-5 rounded-full ${a.soft} lg:block`}
-              animate={{ y: [0, -10, 0] }}
-              transition={{ duration: 2.4, repeat: Infinity, ease: "easeInOut" }}
-            />
-
-            <motion.div
-              aria-hidden="true"
-              className="pointer-events-none absolute right-10 bottom-6 hidden h-8 w-8 rounded-full bg-[rgb(var(--color-accent-cyan))]/20 lg:block"
-              animate={{ y: [0, 12, 0] }}
-              transition={{ duration: 2.8, repeat: Infinity, ease: "easeInOut", delay: 0.2 }}
-            />
-
-            <motion.div
-              aria-hidden="true"
-              className="pointer-events-none absolute -left-6 bottom-20 hidden h-10 w-10 rounded-full bg-[rgb(var(--color-accent-magenta))]/20 lg:block"
-              animate={{ y: [0, -12, 0] }}
-              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 0.35 }}
-            />
           </motion.div>
         </div>
       </section>
 
-      {/* BODY (INLINE) */}
-      <section className="mx-auto max-w-7xl px-6 py-12 md:py-16">
-        {/* section header */}
-        <div className="mb-8 md:mb-10">
-          <p className="text-xs font-semibold uppercase tracking-widest text-muted">
-            What you get
-          </p>
-          <h2 className="mt-3 text-3xl font-semibold text-heading md:text-4xl">
-            Industry-ready capabilities & delivery
-          </h2>
-          <p className="mt-3 max-w-3xl text-base leading-relaxed text-body md:text-lg">
-            This layout stays consistent across all industries. Only the JSON changes — so the UI remains premium and predictable.
-          </p>
-        </div>
-
-        <motion.div
-          variants={containerV}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.2 }}
-          className="grid grid-cols-1 gap-8 md:grid-cols-2"
-        >
-          {data.sections.map((s, i) => (
-            <SectionCard key={s.key} a={a} section={s} index={i} />
-          ))}
-        </motion.div>
-
-        {/* bottom action row */}
-        <div className="mt-10 flex flex-wrap items-center justify-between gap-4 rounded-card border border-border bg-surface p-6 shadow-card">
-          <div>
-            <p className="text-sm font-semibold text-heading">
-              Want this for your business?
-            </p>
-            <p className="mt-1 text-sm text-body">
-              Share your idea — we’ll map the best feature plan for your industry.
-            </p>
-          </div>
-
-          <div className="flex items-center gap-3">
-            
-            <Link
-              to="/contact"
-              className={`rounded-2xl px-5 py-3 text-sm font-semibold text-white shadow-card transition ${a.btn}`}
+      {data.sections?.length ? (
+        <section className="bg-bg py-16 md:py-20">
+          <div className="mx-auto max-w-7xl px-6 lg:px-10">
+            <motion.div
+              variants={containerV}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.16 }}
+              className="grid grid-cols-1 gap-6 md:grid-cols-2"
             >
-              Talk to Our Team
-            </Link>
+              {data.sections.map((section, index) => (
+                <SectionCard
+                  key={`${section.title}-${index}`}
+                  a={a}
+                  section={section}
+                  index={index}
+                />
+              ))}
+            </motion.div>
           </div>
-        </div>
-      </section>
+        </section>
+      ) : null}
     </main>
   );
 }

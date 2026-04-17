@@ -27,6 +27,7 @@ export default function ScrollReveal({
   amount = 0.2,
 }: Props) {
   const { x, y } = offsetFor(direction);
+
   return (
     <motion.div
       className={className}

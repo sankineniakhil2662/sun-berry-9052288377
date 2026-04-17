@@ -7,24 +7,17 @@ type Step = (typeof stepsData)[number];
 const clamp = (n: number, min: number, max: number) => Math.max(min, Math.min(max, n));
 const pad2 = (n: number) => String(n).padStart(2, "0");
 
-const LINE_W = "w-1"; // thickness (w-0.5 / w-1 / w-2)
+const LINE_W = "w-1";
 
 export default function ProcessTimeline() {
   const wrapperRef = useRef<HTMLDivElement | null>(null);
-
-  // marker refs for line fill position (desktop + mobile share same ref list)
   const markerRefs = useRef<(HTMLDivElement | null)[]>([]);
 
-  // last step that has entered viewport (controls line fill)
   const [lastSeenIndex, setLastSeenIndex] = useState(0);
-
-  // active step for pulse (current entering step)
   const [activeIndex, setActiveIndex] = useState(0);
 
-  // smooth line movement
   const fillSpring = useSpring(0, { stiffness: 90, damping: 24, mass: 0.9 });
 
-  // move line to the lastSeen marker center
   useEffect(() => {
     const wrapper = wrapperRef.current;
     const marker = markerRefs.current[lastSeenIndex];
@@ -40,6 +33,7 @@ export default function ProcessTimeline() {
     update();
     window.addEventListener("scroll", update, { passive: true });
     window.addEventListener("resize", update);
+
     return () => {
       window.removeEventListener("scroll", update);
       window.removeEventListener("resize", update);
@@ -54,9 +48,10 @@ export default function ProcessTimeline() {
   const containerV = useMemo(
     () => ({
       hidden: { opacity: 1 },
-      show: { opacity: 1, transition: { staggerChildren: 0.1
-        
-       } },
+      show: {
+        opacity: 1,
+        transition: { staggerChildren: 0.1 },
+      },
     }),
     []
   );
@@ -65,19 +60,15 @@ export default function ProcessTimeline() {
     <section className="bg-bg">
       <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
         <div ref={wrapperRef} className="relative">
-          {/* ========= DESKTOP CENTER LINE ========= */}
+          {/* Desktop center line */}
           <div
             className={`pointer-events-none absolute left-1/2 top-0 hidden h-full -translate-x-1/2 bg-border md:block ${LINE_W}`}
           />
-          {/* <motion.div
-            className={`pointer-events-none absolute left-1/2 top-0 hidden -translate-x-1/2 bg-[rgb(var(--color-accent-purple))] md:block ${LINE_W}`}
-            style={{ height: fillSpring }}
-          /> */}
 
-          {/* ========= MOBILE LEFT LINE ========= */}
-          <div className={`pointer-events-none absolute left-5 top-0 h-full bg-border md:hidden ${LINE_W}`} />
+          {/* Mobile left line */}
+          <div className={`pointer-events-none absolute left-4 top-0 h-full bg-border md:hidden ${LINE_W}`} />
           <motion.div
-            className={`pointer-events-none absolute left-5 top-0 bg-[rgb(var(--color-accent-purple))] md:hidden ${LINE_W}`}
+            className={`pointer-events-none absolute left-4 top-0 bg-[rgb(var(--color-accent-purple))] md:hidden ${LINE_W}`}
             style={{ height: fillSpring }}
           />
 
@@ -93,9 +84,8 @@ export default function ProcessTimeline() {
 
               return (
                 <div key={step.id} className="relative">
-                  {/* ===================== DESKTOP ===================== */}
+                  {/* Desktop */}
                   <div className="hidden md:grid md:grid-cols-[1fr_auto_1fr] md:items-center md:gap-10">
-                    {/* Left card */}
                     <div>
                       {!isRight ? (
                         <RevealCard index={index} onEnter={onEnterStep}>
@@ -106,7 +96,6 @@ export default function ProcessTimeline() {
                       )}
                     </div>
 
-                    {/* Center marker */}
                     <div className="relative flex w-10 items-center justify-center">
                       <div
                         ref={(el) => {
@@ -130,7 +119,6 @@ export default function ProcessTimeline() {
                       </div>
                     </div>
 
-                    {/* Right card */}
                     <div>
                       {isRight ? (
                         <RevealCard index={index} onEnter={onEnterStep}>
@@ -142,15 +130,15 @@ export default function ProcessTimeline() {
                     </div>
                   </div>
 
-                  {/* ===================== MOBILE ===================== */}
+                  {/* Mobile */}
                   <div className="md:hidden">
-                    <div className="relative pl-14">
+                    <div className="relative pl-12">
                       <div
                         ref={(el) => {
                           markerRefs.current[index] = el;
                         }}
                         className={[
-                          "absolute left-0 top-8 flex h-10 w-10 items-center justify-center rounded-full border bg-surface",
+                          "absolute left-0 top-8 flex h-8 w-8 items-center justify-center rounded-full border bg-surface",
                           isActive
                             ? "border-[rgb(var(--color-accent-purple))] shadow-hover"
                             : "border-border shadow-card",
@@ -158,7 +146,7 @@ export default function ProcessTimeline() {
                       >
                         <motion.span
                           className={[
-                            "h-3 w-3 rounded-full",
+                            "h-2.5 w-2.5 rounded-full",
                             isActive ? "bg-[rgb(var(--color-accent-purple))]" : "bg-border",
                           ].join(" ")}
                           animate={isActive ? { scale: [1, 1.15, 1] } : { scale: 1 }}
@@ -181,8 +169,7 @@ export default function ProcessTimeline() {
   );
 }
 
-/** ✅ This is the key fix: reveal is handled by Framer Motion viewport */
-function  RevealCard({
+function RevealCard({
   index,
   onEnter,
   children,
@@ -195,8 +182,8 @@ function  RevealCard({
     <motion.div
       initial={{ opacity: 0, y: 22 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.25 }}
-      transition={{ duration: 0.1, ease: [0.2, 0.8, 0.2, 1] }}
+      viewport={{ once: true, amount: 0.15 }}
+      transition={{ duration: 0.45, ease: [0.2, 0.8, 0.2, 1] }}
       onViewportEnter={() => onEnter(index)}
     >
       {children}
@@ -212,40 +199,40 @@ function TimelineCard({
   big: string;
 }) {
   return (
-    <article className="rounded-card border border-border bg-surface px-6 py-6 shadow-card transition hover:shadow-hover">
-      <div className="flex items-start justify-between gap-6">
-        <div className="min-w-0">
-          <div className="flex items-center gap-3">
+    <article className="rounded-card border border-border bg-surface px-5 py-5 shadow-card transition hover:shadow-hover sm:px-6 sm:py-6">
+      <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between sm:gap-6">
+        <div className="min-w-0 flex-1">
+          <div className="flex items-start gap-3">
             <img
               src={step.image}
               alt={step.title}
-              className="h-12 w-12 rounded-2xl border border-border bg-bg object-contain p-2"
+              className="h-11 w-11 shrink-0 rounded-2xl border border-border bg-bg object-contain p-2 sm:h-12 sm:w-12"
               loading="lazy"
               draggable={false}
             />
-            <div>
+
+            <div className="min-w-0 flex-1">
               <p className="text-xs font-semibold uppercase tracking-widest text-muted">
                 {step.label}
               </p>
-              <h3 className="mt-1 text-xl font-semibold text-heading sm:text-2xl">
+              <h3 className="mt-1 text-lg font-semibold leading-tight text-heading sm:text-2xl">
                 {step.title}
               </h3>
             </div>
           </div>
 
-          <p className="mt-4 text-sm leading-relaxed text-body sm:text-base">
+          <p className="mt-4 text-sm leading-7 text-body sm:text-base sm:leading-relaxed">
             {step.description}
           </p>
         </div>
 
-        <p className="shrink-0 text-5xl font-extrabold leading-none text-[rgb(var(--color-accent-cyan))] sm:text-6xl">
+        <p className="self-end text-4xl font-extrabold leading-none text-[rgb(var(--color-accent-cyan))] sm:self-auto sm:text-6xl">
           {big}
         </p>
       </div>
 
-      {/* bottom accent bar */}
       <div className="mt-5 h-1.5 w-full rounded-full bg-[rgb(var(--color-accent-purple))]/20">
-        <div className="h-1.5 w-3/3 rounded-full bg-[rgb(var(--color-accent-purple))]" />
+        <div className="h-1.5 w-full rounded-full bg-[rgb(var(--color-accent-purple))]" />
       </div>
     </article>
   );

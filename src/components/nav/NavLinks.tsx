@@ -15,6 +15,8 @@ export const NAV_ITEMS: NavItem[] = [
     label: "Services",
     to: "/services",
     children: [
+      { label: "AI Solutions", to: "/services/ai-solutions" },
+      { label: "Oracle Fusion Services", to: "/services/oracle-fusion-services" },
       { label: "Web Development", to: "/services/web-development" },
       { label: "Mobile App Development", to: "/services/mobile-app-development" },
       { label: "UI/UX Design", to: "/services/ui-ux-design" },
@@ -23,8 +25,6 @@ export const NAV_ITEMS: NavItem[] = [
       { label: "Internship Programs", to: "/services/internship-programs" },
       { label: "E-Learning Solutions", to: "/services/e-learning-solutions" },
       { label: "Game Development", to: "/services/game-development" },
-      { label: "AI Solutions", to: "/services/ai-solutions" },
-      { label: "Oracle Fusion Services", to: "/services/oracle-fusion-services" },
     ],
   },
   {
