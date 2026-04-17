@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import {
+  CheckCircle,
   Facebook,
   Instagram,
   Linkedin,
@@ -15,7 +16,7 @@ const quickLinks = [
   { label: "About Us", to: "/about" },
   { label: "Services", to: "/services" },
   { label: "Industries", to: "/industries" },
-  { label: "Careers", to: "/career" },
+  { label: "Careers", to: "/careers" },
   { label: "Contact", to: "/contact" },
 ];
 
@@ -27,6 +28,20 @@ const socials = [
 ];
 
 export default function Footer() {
+  const [email, setEmail] = useState("");
+  const [subscribed, setSubscribed] = useState(false);
+  const [error, setError] = useState("");
+
+  function handleSubscribe(e: React.FormEvent) {
+    e.preventDefault();
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      setError("Please enter a valid email address.");
+      return;
+    }
+    setError("");
+    setSubscribed(true);
+  }
+
   return (
     <footer className="relative overflow-hidden bg-[#062a64] text-white">
       <div className="pointer-events-none absolute inset-0">
@@ -163,26 +178,40 @@ export default function Footer() {
               and new launches.
             </p>
 
-            <form
-              className="mt-6 space-y-3"
-              onSubmit={(e) => e.preventDefault()}
-            >
-              <input
-                type="email"
-                placeholder="Your email"
-                className="w-full rounded-xl border border-white/15 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/50 outline-none transition focus:border-[rgb(var(--color-accent-purple))]"
-              />
-              <button
-                type="submit"
-                className="w-full rounded-xl bg-white/15 px-4 py-3 text-sm font-semibold text-white transition hover:bg-white/25"
-              >
-                Subscribe
-              </button>
-            </form>
+            {subscribed ? (
+              <div className="mt-6 flex flex-col items-center gap-3 rounded-xl border border-green-400/30 bg-green-400/10 px-4 py-6 text-center">
+                <CheckCircle className="h-8 w-8 text-green-400" />
+                <p className="text-sm font-semibold text-green-300">You're subscribed!</p>
+                <p className="text-xs text-white/60">Thanks for joining. We'll keep you in the loop.</p>
+              </div>
+            ) : (
+              <form className="mt-6 space-y-3" onSubmit={handleSubscribe} noValidate>
+                <div>
+                  <input
+                    type="email"
+                    value={email}
+                    onChange={(e) => { setEmail(e.target.value); setError(""); }}
+                    placeholder="Your email"
+                    className={`w-full rounded-xl border bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/50 outline-none transition ${
+                      error ? "border-red-400/70 focus:border-red-400" : "border-white/15 focus:border-[rgb(var(--color-accent-purple))]"
+                    }`}
+                  />
+                  {error && (
+                    <p className="mt-1.5 text-xs text-red-400">{error}</p>
+                  )}
+                </div>
+                <button
+                  type="submit"
+                  className="w-full rounded-xl bg-white/15 px-4 py-3 text-sm font-semibold text-white transition hover:bg-white/25 active:scale-[0.98]"
+                >
+                  Subscribe
+                </button>
+              </form>
+            )}
 
-            <p className="mt-3 text-xs text-white/55">
-              No spam. Unsubscribe anytime.
-            </p>
+            {!subscribed && (
+              <p className="mt-3 text-xs text-white/55">No spam. Unsubscribe anytime.</p>
+            )}
           </div>
         </div>
       </div>
