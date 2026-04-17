@@ -15,7 +15,7 @@ const quickLinks = [
   { label: "About Us", to: "/about" },
   { label: "Services", to: "/services" },
   { label: "Industries", to: "/industries" },
-  { label: "Careers", to: "/career" },
+  { label: "Careers", to: "/careers" },
   { label: "Contact", to: "/contact" },
 ];
 
