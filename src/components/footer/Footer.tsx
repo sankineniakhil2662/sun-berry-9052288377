@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import {
   Facebook,
@@ -10,11 +10,11 @@ import {
   Youtube,
 } from "lucide-react";
 import logo from "../../assets/SLOGO .png";
+import ErrorPopup from "../contact/ErrorPopup";
+
 
 const quickLinks = [
   { label: "About Us", to: "/about" },
-  { label: "Services", to: "/services" },
-  { label: "Industries", to: "/industries" },
   { label: "Careers", to: "/career" },
   { label: "Contact", to: "/contact" },
 ];
@@ -27,6 +27,43 @@ const socials = [
 ];
 
 export default function Footer() {
+  const [showErrorPopup, setShowErrorPopup] = useState(false);
+  const [showSuccessPopup, setShowSuccessPopup] = useState(false);
+
+  const [input, setInput] = useState({
+      email: "",
+    });
+
+  const [errors, setErrors] = useState<Record<string, string>>({});
+
+  const validateForm = () => {
+    const newErrors: Record<string, string> = {};
+    if (!input.email.trim()) newErrors.email = "Email is required";
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const inputClass = (error?: string) =>
+    `w-full mt-1 border rounded-lg px-4 py-3 outline-none ${
+      error
+        ? "border-red-500 focus:ring-red-400"
+        : "focus:ring-2 focus:ring-purple-400"
+    }`;
+
+  const handleSubmit = (e: React.FormEvent) => {
+      e.preventDefault();
+      if (validateForm()) {
+        console.log({ ...input });
+        setShowSuccessPopup(true);
+        setInput({  
+          email: "",
+        });
+      } else {
+        setShowErrorPopup(true);
+      }
+    };
+
   return (
     <footer className="relative overflow-hidden bg-[#062a64] text-white">
       <div className="pointer-events-none absolute inset-0">
@@ -165,19 +202,37 @@ export default function Footer() {
 
             <form
               className="mt-6 space-y-3"
-              onSubmit={(e) => e.preventDefault()}
+              onSubmit={handleSubmit}  
             >
               <input
                 type="email"
                 placeholder="Your email"
+                value={input.email}
+                onChange={(e) =>
+                  setInput({ ...input, email: e.target.value })
+                }
                 className="w-full rounded-xl border border-white/15 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/50 outline-none transition focus:border-[rgb(var(--color-accent-purple))]"
               />
               <button
                 type="submit"
                 className="w-full rounded-xl bg-white/15 px-4 py-3 text-sm font-semibold text-white transition hover:bg-white/25"
+
               >
                 Subscribe
               </button>
+              {showErrorPopup && (
+                <ErrorPopup
+                  type="error"
+                  onClose={() => setShowErrorPopup(false)}
+                />
+              )}
+
+              {showSuccessPopup && (
+                <ErrorPopup
+                  type="success"
+                  onClose={() => setShowSuccessPopup(false)}
+                />
+              )}
             </form>
 
             <p className="mt-3 text-xs text-white/55">
@@ -206,6 +261,8 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      
     </footer>
+    
   );
 }
